@@ -1,0 +1,37 @@
+graph TD
+    %% Core Client & Infrastructure
+    A[Mobile Device Browser] -->|Initial Request| B(GitHub Pages Hosting)
+    B -->|Serves Static Files| A
+    
+    %% Offline Architecture (PWA)
+    A -->|Installs| SW[sw.js - Service Worker]
+    SW -->|Caches Assets on First Load| C_Cache[(Browser Cache)]
+    C_Cache -->|Offline Fallback| A
+    
+    %% Application Logic (ES Modules)
+    A -->|Entry Point| APP[app.js - Orchestrator]
+    APP -->|Imports Variables| CFG(config.js)
+    APP -->|Fetches Data| API[api.js]
+    APP -->|Binds Events| UI[ui.js]
+    APP -->|Initializes Map| MAP[map.js]
+    
+    %% Data Flow
+    API -->|HTTP GET or Cache| JSON{places.json}
+    JSON -->|Returns 73 Locations| MAP
+    
+    %% Map Rendering
+    MAP -->|Demands Engine| L[Leaflet.js CDN]
+    L -->|Fetches Map Tiles| OSM[OpenStreetMap Servers]
+    OSM -->|Returns Tile Images| L
+    CFG -->|Provides Colors & Icons| MAP
+    MAP -->|Renders Custom Markers| A
+    
+    %% User Interactions
+    UI -->|Toggles Checkbox| UI_Filter[Real-Time Category Filter]
+    UI_Filter -->|Updates LayerGroup| MAP
+    
+    UI -->|Clicks FAB Bottom-Left| UI_Locate[Locate Me Button]
+    UI_Locate -->|Geolocation API| MAP
+    
+    A -->|Taps Marker| L_Popup[Closes old Popup, Opens new Popup]
+    L_Popup -->|Click 'Navigate'| GMAPS[Deep Link to Google Maps App]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#E63946" />
+  <meta name="description" content="מפת טיול אינטראקטיבית של רומא - המלצות קולינריה, פארקים, אתרים היסטוריים ונקודות חובה." />
+  
+  <title>רומא - מפת טיול אינטראקטיבית</title>
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts: Rubik for Hebrew & English typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- FontAwesome 6 Free Public CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fullscreen Loader Overlay -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-card">
+      <div class="spinner"></div>
+      <p class="loader-text">טוען את מפת רומא...</p>
+    </div>
+  </div>
+
+  <!-- Map Container -->
+  <div id="map"></div>
+
+  <!-- Floating UI Buttons -->
+  <button id="filter-btn" class="fab-btn filter-fab" aria-label="סינון קטגוריות" title="סינון קטגוריות">
+    <i class="fa-solid fa-sliders"></i>
+  </button>
+
+  <button id="locate-btn" class="fab-btn locate-fab" aria-label="המיקום שלי" title="המיקום שלי">
+    <i class="fa-solid fa-crosshairs"></i>
+  </button>
+
+  <!-- Category Filter Drawer Modal -->
+  <div id="filter-overlay" class="modal-overlay"></div>
+  <aside id="filter-modal" class="filter-modal" aria-label="תפריט סינון">
+    <div class="filter-header">
+      <h3><i class="fa-solid fa-filter"></i> סינון לפי קטגוריות</h3>
+      <button id="filter-close-btn" class="close-btn" aria-label="סגור תפריט">&times;</button>
+    </div>
+
+    <div class="filter-actions">
+      <button id="select-all-btn" class="action-btn">בחר הכל</button>
+      <button id="deselect-all-btn" class="action-btn secondary">נקה הכל</button>
+    </div>
+
+    <div id="category-list" class="category-list"></div>
+  </aside>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast-notification" role="alert"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Main ES Module Script -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

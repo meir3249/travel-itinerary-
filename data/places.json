@@ -1,0 +1,1389 @@
+[
+  {
+    "id": "colosseum",
+    "title": "Colosseum (קולוסיאום)",
+    "category": "היסטוריה",
+    "coordinates": {
+      "lat": 41.8902,
+      "lng": 12.4922
+    },
+    "rating": 4.7,
+    "atmosphere": "מונומנטלי",
+    "reservation": "חובה להזמין מראש",
+    "notes": "כרטיסים כ-30 יום מראש. לסיור תחתון נדרש כרטיס מורחב.",
+    "tags": [
+      "history",
+      "landmark",
+      "must-see"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Colosseum+Rome](https://www.google.com/maps/search/?api=1&query=Colosseum+Rome)"
+  },
+  {
+    "id": "vatican",
+    "title": "Vatican (הוותיקן)",
+    "category": "היסטוריה",
+    "coordinates": {
+      "lat": 41.9029,
+      "lng": 12.4534
+    },
+    "rating": 4.6,
+    "atmosphere": "עמוס ורוחני",
+    "reservation": "חובה להזמין מראש",
+    "notes": "חובה להזמין חודשים מראש. קוד לבוש צנוע נאכף בקפידה.",
+    "tags": [
+      "history",
+      "museum",
+      "religious"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Vatican+Rome](https://www.google.com/maps/search/?api=1&query=Vatican+Rome)"
+  },
+  {
+    "id": "pantheon",
+    "title": "Pantheon (פנתאון)",
+    "category": "היסטוריה",
+    "coordinates": {
+      "lat": 41.8986,
+      "lng": 12.4769
+    },
+    "rating": 4.8,
+    "atmosphere": "קלאסי",
+    "reservation": "מומלץ להזמין מראש",
+    "notes": "כניסה בתשלום. בסופי שבוע הזמנה מראש היא חובה.",
+    "tags": [
+      "history",
+      "architecture",
+      "classic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pantheon+Rome](https://www.google.com/maps/search/?api=1&query=Pantheon+Rome)"
+  },
+  {
+    "id": "trevi-fountain",
+    "title": "Trevi Fountain (מזרקת טרווי)",
+    "category": "היסטוריה",
+    "coordinates": {
+      "lat": 41.9009,
+      "lng": 12.4833
+    },
+    "rating": 4.8,
+    "atmosphere": "עמוס מאוד",
+    "reservation": "Walk-ins",
+    "notes": "מומלץ להגיע ב-06:00 בבוקר. לשמור על חפצים.",
+    "tags": [
+      "landmark",
+      "crowded",
+      "fountain"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome](https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome)"
+  },
+  {
+    "id": "spanish-steps",
+    "title": "Spanish Steps (המדרגות הספרדיות)",
+    "category": "היסטוריה",
+    "coordinates": {
+      "lat": 41.906,
+      "lng": 12.4828
+    },
+    "rating": 4.7,
+    "atmosphere": "אלגנטי",
+    "reservation": "Walk-ins",
+    "notes": "אזהרה: חל איסור חמור על ישיבה או אכילה על המדרגות (קנסות).",
+    "tags": [
+      "landmark",
+      "elegant",
+      "strict-rules"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome](https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome)"
+  },
+  {
+    "id": "altare-della-patria",
+    "title": "Altare della Patria",
+    "category": "תצפית",
+    "coordinates": {
+      "lat": 41.8946,
+      "lng": 12.4828
+    },
+    "rating": 4.8,
+    "atmosphere": "פנורמי",
+    "reservation": "Walk-ins",
+    "notes": "תצפית 360 מרהיבה לקראת שקיעה מהגג (בתשלום למעלית).",
+    "tags": [
+      "viewpoint",
+      "panoramic",
+      "monument"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Altare+della+Patria+Rome](https://www.google.com/maps/search/?api=1&query=Altare+della+Patria+Rome)"
+  },
+  {
+    "id": "villa-borghese",
+    "title": "Villa Borghese",
+    "category": "פארק",
+    "coordinates": {
+      "lat": 41.9142,
+      "lng": 12.4921
+    },
+    "rating": 4.7,
+    "atmosphere": "פסטורלי",
+    "reservation": "Walk-ins",
+    "notes": "ריאה ירוקה. מומלץ להשכיר סירת משוטים באגם.",
+    "tags": [
+      "park",
+      "nature",
+      "romantic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Rome](https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Rome)"
+  },
+  {
+    "id": "rome-rose-garden",
+    "title": "Rome Rose Garden",
+    "category": "פארק",
+    "coordinates": {
+      "lat": 41.8833,
+      "lng": 12.4828
+    },
+    "rating": 4.6,
+    "atmosphere": "רומנטי",
+    "reservation": "Walk-ins",
+    "notes": "פתוח עונתית (בעיקר אביב-קיץ). לוודא פתיחה מראש.",
+    "tags": [
+      "garden",
+      "romantic",
+      "seasonal"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Rome+Rose+Garden+Rome](https://www.google.com/maps/search/?api=1&query=Rome+Rose+Garden+Rome)"
+  },
+  {
+    "id": "parco-di-caracalla",
+    "title": "Parco di Caracalla",
+    "category": "פארק",
+    "coordinates": {
+      "lat": 41.8792,
+      "lng": 12.4925
+    },
+    "rating": 4.6,
+    "atmosphere": "רגוע",
+    "reservation": "Walk-ins",
+    "notes": "חלופה שקטה ופחות עמוסה, תצפית מרשימה על עתיקות.",
+    "tags": [
+      "park",
+      "quiet",
+      "ruins"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Parco+di+Caracalla+Rome](https://www.google.com/maps/search/?api=1&query=Parco+di+Caracalla+Rome)"
+  },
+  {
+    "id": "swiss-institute",
+    "title": "Swiss Institute",
+    "category": "פנינה נסתרת",
+    "coordinates": {
+      "lat": 41.908,
+      "lng": 12.487
+    },
+    "rating": 4.7,
+    "atmosphere": "אינטלקטואלי",
+    "reservation": "לבדוק אירועים",
+    "notes": "בוילה מרקיניה. נופים, גנים ואמנות - מעולה לדייט.",
+    "tags": [
+      "hidden-gem",
+      "art",
+      "date-spot"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Swiss+Institute+Rome](https://www.google.com/maps/search/?api=1&query=Swiss+Institute+Rome)"
+  },
+  {
+    "id": "lovers-fountain",
+    "title": "Lover's Fountain",
+    "category": "פנינה נסתרת",
+    "coordinates": {
+      "lat": 41.901,
+      "lng": 12.4835
+    },
+    "rating": 4.5,
+    "atmosphere": "אינטימי",
+    "reservation": "Walk-ins",
+    "notes": "בצד ימין של טרווי. לפי המסורת: שותים יחד לאהבה נצחית.",
+    "tags": [
+      "hidden-gem",
+      "romantic",
+      "fountain"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Lover%27s+Fountain+Rome](https://www.google.com/maps/search/?api=1&query=Lover%27s+Fountain+Rome)"
+  },
+  {
+    "id": "monti",
+    "title": "Monti (שכונת מונטי)",
+    "category": "שיטוט",
+    "coordinates": {
+      "lat": 41.895,
+      "lng": 12.491
+    },
+    "rating": 4.8,
+    "atmosphere": "בוטיקי",
+    "reservation": "Walk-ins",
+    "notes": "שכונה שקטה, חנויות וינטג' וברים. אלטרנטיבה יוקרתית.",
+    "tags": [
+      "neighborhood",
+      "boutique",
+      "walking"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Monti+Rome](https://www.google.com/maps/search/?api=1&query=Monti+Rome)"
+  },
+  {
+    "id": "tiber-river",
+    "title": "Tiber River (מ-21:00)",
+    "category": "אירוע קיץ",
+    "coordinates": {
+      "lat": 41.889,
+      "lng": 12.472
+    },
+    "rating": 4.6,
+    "atmosphere": "פסטיבלי",
+    "reservation": "Walk-ins",
+    "notes": "אירועי קיץ לאורך הנהר - אוהלים, ברים ומסעדות.",
+    "tags": [
+      "summer",
+      "festival",
+      "nightlife"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Tiber+River+Rome](https://www.google.com/maps/search/?api=1&query=Tiber+River+Rome)"
+  },
+  {
+    "id": "the-oddity-patch-bar",
+    "title": "The Oddity Patch Bar",
+    "category": "אטרקציה/קניות",
+    "coordinates": {
+      "lat": 41.8955,
+      "lng": 12.4918
+    },
+    "rating": 4.8,
+    "atmosphere": "יצירתי",
+    "reservation": "Walk-ins",
+    "notes": "עיצוב אישי של כיסויי דרכון ותיקים (שכונת מונטי).",
+    "tags": [
+      "shopping",
+      "custom",
+      "trendy"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=The+Oddity+Patch+Bar+Rome](https://www.google.com/maps/search/?api=1&query=The+Oddity+Patch+Bar+Rome)"
+  },
+  {
+    "id": "rega-bijoux",
+    "title": "Rega Bijoux",
+    "category": "אטרקציה/קניות",
+    "coordinates": {
+      "lat": 41.9002,
+      "lng": 12.4715
+    },
+    "rating": 4.5,
+    "atmosphere": "אלגנטי",
+    "reservation": "Walk-ins",
+    "notes": "מתמחים בצמידי נצח בהלחמה במקום לזוגות או חברות.",
+    "tags": [
+      "jewelry",
+      "boutique",
+      "gifts"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Rega+Bijoux+Rome](https://www.google.com/maps/search/?api=1&query=Rega+Bijoux+Rome)"
+  },
+  {
+    "id": "paolina-roma",
+    "title": "Paolina Roma",
+    "category": "אטרקציה/קניות",
+    "coordinates": {
+      "lat": 41.898,
+      "lng": 12.474
+    },
+    "rating": 4.4,
+    "atmosphere": "צעיר",
+    "reservation": "Walk-ins",
+    "notes": "חלופה נוספת לצמידי נצח וקמעות בהתאמה אישית.",
+    "tags": [
+      "jewelry",
+      "custom",
+      "young"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Paolina+Roma+Rome](https://www.google.com/maps/search/?api=1&query=Paolina+Roma+Rome)"
+  },
+  {
+    "id": "pifebo-vintage",
+    "title": "Pifebo Vintage",
+    "category": "קניות",
+    "coordinates": {
+      "lat": 41.8958,
+      "lng": 12.492
+    },
+    "rating": 4.6,
+    "atmosphere": "רטרו",
+    "reservation": "Walk-ins",
+    "notes": "מוסד וינטג' במונטי, אופנת שנות ה-70/80 ומוצרי עור.",
+    "tags": [
+      "vintage",
+      "shopping",
+      "retro"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pifebo+Vintage+Rome](https://www.google.com/maps/search/?api=1&query=Pifebo+Vintage+Rome)"
+  },
+  {
+    "id": "via-del-corso-venezia",
+    "title": "Via del Corso & Venezia",
+    "category": "קניות",
+    "coordinates": {
+      "lat": 41.897,
+      "lng": 12.481
+    },
+    "rating": 4.3,
+    "atmosphere": "מסחרי",
+    "reservation": "Walk-ins",
+    "notes": "העורק הראשי לקניות רשתות ברומא. סואן וצפוף.",
+    "tags": [
+      "shopping",
+      "commercial",
+      "busy"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Via+del+Corso+%26+Venezia+Rome](https://www.google.com/maps/search/?api=1&query=Via+del+Corso+%26+Venezia+Rome)"
+  },
+  {
+    "id": "mercato-di-porta-portese",
+    "title": "Mercato di Porta Portese",
+    "category": "שוק פשפשים",
+    "coordinates": {
+      "lat": 41.882,
+      "lng": 12.472
+    },
+    "rating": 4.4,
+    "atmosphere": "כאוטי",
+    "reservation": "ימי ראשון בלבד",
+    "notes": "07:00-14:00. אותנטי אך דורש ערנות גבוהה מאוד לכייסים.",
+    "tags": [
+      "flea-market",
+      "authentic",
+      "beware-pickpockets"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Mercato+di+Porta+Portese+Rome](https://www.google.com/maps/search/?api=1&query=Mercato+di+Porta+Portese+Rome)"
+  },
+  {
+    "id": "campo-de-fiori-market",
+    "title": "Campo de' Fiori Market",
+    "category": "שוק פתוח",
+    "coordinates": {
+      "lat": 41.8956,
+      "lng": 12.4722
+    },
+    "rating": 4.2,
+    "atmosphere": "צבעוני",
+    "reservation": "יומי (לא ראשון)",
+    "notes": "ממוסחר יחסית, מציע בעיקר מזכרות ותבלינים לתיירים.",
+    "tags": [
+      "market",
+      "touristy",
+      "colorful"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori+Market+Rome](https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori+Market+Rome)"
+  },
+  {
+    "id": "porta-di-roma-euroma2",
+    "title": "Porta di Roma / Euroma2",
+    "category": "קניונים",
+    "coordinates": {
+      "lat": 41.97,
+      "lng": 12.54
+    },
+    "rating": 4.3,
+    "atmosphere": "מודרני",
+    "reservation": "Walk-ins",
+    "notes": "קניוני ענק הרחק מהמרכז. מומלץ רק למקרי גשם או חום קיצוני.",
+    "tags": [
+      "mall",
+      "modern",
+      "suburban"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Porta+di+Roma+Rome](https://www.google.com/maps/search/?api=1&query=Porta+di+Roma+Rome)"
+  },
+  {
+    "id": "the-one-boutique-spa",
+    "title": "The One Boutique Spa",
+    "category": "ספא",
+    "coordinates": {
+      "lat": 41.9015,
+      "lng": 12.484
+    },
+    "rating": 4.7,
+    "atmosphere": "מרגיע",
+    "reservation": "חובה להזמין",
+    "notes": "ספא יוקרתי (חמאם/סאונה) קרוב לטרווי. מעולה לזוגות.",
+    "tags": [
+      "spa",
+      "relaxing",
+      "couples"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=The+One+Boutique+Spa+Rome](https://www.google.com/maps/search/?api=1&query=The+One+Boutique+Spa+Rome)"
+  },
+  {
+    "id": "gigi-rigolatto",
+    "title": "Gigi Rigolatto (Gigis)*",
+    "category": "רופטופ/מסעדה",
+    "coordinates": {
+      "lat": 41.8982,
+      "lng": 12.4775
+    },
+    "rating": 4.4,
+    "atmosphere": "פנורמי",
+    "reservation": "חובה להזמין",
+    "notes": "על גג מלון מינרווה. שירות מוקפד ונוף 360 נדיר (יקר אך שווה).",
+    "tags": [
+      "rooftop",
+      "restaurant",
+      "upscale"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Gigi+Rigolatto+Rome](https://www.google.com/maps/search/?api=1&query=Gigi+Rigolatto+Rome)"
+  },
+  {
+    "id": "mimi-e-coco",
+    "title": "Mimi e Coco*",
+    "category": "יין ומסעדה",
+    "coordinates": {
+      "lat": 41.8981,
+      "lng": 12.4705
+    },
+    "rating": 4.5,
+    "atmosphere": "רועש וצעיר",
+    "reservation": "מומלץ להזמין",
+    "notes": "אווירה שמחה ותוססת מאוד, אוכל ברמה טובה במרכז תיירותי.",
+    "tags": [
+      "wine",
+      "lively",
+      "restaurant"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Mimi+e+Coco+Rome](https://www.google.com/maps/search/?api=1&query=Mimi+e+Coco+Rome)"
+  },
+  {
+    "id": "da-enzo-al-29",
+    "title": "Da Enzo al 29",
+    "category": "מסעדת ישיבה",
+    "coordinates": {
+      "lat": 41.8885,
+      "lng": 12.4776
+    },
+    "rating": 4.6,
+    "atmosphere": "צפוף ואותנטי",
+    "reservation": "אין הזמנות",
+    "notes": "קרבונרה מושלמת בטרסטוורה. חובה להגיע חצי שעה לפני הפתיחה!",
+    "tags": [
+      "pasta",
+      "authentic",
+      "no-reservations"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome](https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome)"
+  },
+  {
+    "id": "fiaschetteria-beltramme",
+    "title": "Fiaschetteria Beltramme",
+    "category": "מסעדת ישיבה",
+    "coordinates": {
+      "lat": 41.9052,
+      "lng": 12.4808
+    },
+    "rating": 4.5,
+    "atmosphere": "משפחתי",
+    "reservation": "מומלץ להזמין",
+    "notes": "פנינה ליד המדרגות הספרדיות. פסטות טריות ושירות אדיב.",
+    "tags": [
+      "pasta",
+      "family",
+      "hidden-gem"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Fiaschetteria+Beltramme+Rome](https://www.google.com/maps/search/?api=1&query=Fiaschetteria+Beltramme+Rome)"
+  },
+  {
+    "id": "la-tavernetta-48",
+    "title": "La Tavernetta 48",
+    "category": "מסעדת ישיבה",
+    "coordinates": {
+      "lat": 41.8975,
+      "lng": 12.476
+    },
+    "rating": 4.7,
+    "atmosphere": "מוסתר ורומנטי",
+    "reservation": "מומלץ להזמין",
+    "notes": "מסתתרת בסמטאות הפנתאון. מנות איכותיות מאוד.",
+    "tags": [
+      "romantic",
+      "hidden",
+      "quality"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+Tavernetta+48+Rome](https://www.google.com/maps/search/?api=1&query=La+Tavernetta+48+Rome)"
+  },
+  {
+    "id": "santi-40",
+    "title": "Santi 40",
+    "category": "מסעדת ערב",
+    "coordinates": {
+      "lat": 41.8895,
+      "lng": 12.471
+    },
+    "rating": 4.6,
+    "atmosphere": "אינטימי",
+    "reservation": "מומלץ להזמין",
+    "notes": "בטרסטוורה, עיצוב של ביסטרו פריזאי וחוויה קולינרית מעולה.",
+    "tags": [
+      "bistro",
+      "dinner",
+      "intimate"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Santi+40+Rome](https://www.google.com/maps/search/?api=1&query=Santi+40+Rome)"
+  },
+  {
+    "id": "deroma-farine-romane",
+    "title": "DeRoma (Farine Romane)",
+    "category": "מסעדת ישיבה",
+    "coordinates": {
+      "lat": 41.9042,
+      "lng": 12.4805
+    },
+    "rating": 4.9,
+    "atmosphere": "חמים",
+    "reservation": "מומלץ",
+    "notes": "אחת המדורגות ביותר באזור המדרגות הספרדיות. אוכל מצוין.",
+    "tags": [
+      "highly-rated",
+      "cozy",
+      "restaurant"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=DeRoma+Farine+Romane+Rome](https://www.google.com/maps/search/?api=1&query=DeRoma+Farine+Romane+Rome)"
+  },
+  {
+    "id": "interno-92",
+    "title": "Interno 92 (Intero 92)",
+    "category": "מסעדת ערב",
+    "coordinates": {
+      "lat": 41.9085,
+      "lng": 12.451
+    },
+    "rating": 4.8,
+    "atmosphere": "כפרי-מודרני",
+    "reservation": "מומלץ",
+    "notes": "באזור הוותיקן, התמחות יוצאת דופן בבשרים על הגריל.",
+    "tags": [
+      "dinner",
+      "meat",
+      "modern-rustic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Interno+92+Rome](https://www.google.com/maps/search/?api=1&query=Interno+92+Rome)"
+  },
+  {
+    "id": "felice-a-testaccio",
+    "title": "Felice a Testaccio",
+    "category": "מסעדת ישיבה",
+    "coordinates": {
+      "lat": 41.8785,
+      "lng": 12.4782
+    },
+    "rating": 4.6,
+    "atmosphere": "דינמי",
+    "reservation": "חובה להזמין",
+    "notes": "לא טייקאווי! מסעדה אייקונית המכינה קאצ'ו אה פפה ליד השולחן.",
+    "tags": [
+      "iconic",
+      "pasta",
+      "dynamic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome](https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome)"
+  },
+  {
+    "id": "da-pancrazio-dal-1922",
+    "title": "Da Pancrazio dal 1922",
+    "category": "מסעדת ערב",
+    "coordinates": {
+      "lat": 41.8953,
+      "lng": 12.4731
+    },
+    "rating": 4.3,
+    "atmosphere": "תיאטרלי",
+    "reservation": "מומלץ להזמין",
+    "notes": "מרתף המסעדה בנוי לתוך חורבות תיאטרון פומפיוס העתיק.",
+    "tags": [
+      "historical",
+      "dinner",
+      "theatrical"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Da+Pancrazio+dal+1922+Rome](https://www.google.com/maps/search/?api=1&query=Da+Pancrazio+dal+1922+Rome)"
+  },
+  {
+    "id": "caligola",
+    "title": "Caligola",
+    "category": "מסעדת ערב",
+    "coordinates": {
+      "lat": 41.886,
+      "lng": 12.47
+    },
+    "rating": 4.4,
+    "atmosphere": "דינמי",
+    "reservation": "מומלץ להזמין",
+    "notes": "אווירה טובה ותפריט יצירתי.",
+    "tags": [
+      "dinner",
+      "creative",
+      "dynamic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Caligola+Rome](https://www.google.com/maps/search/?api=1&query=Caligola+Rome)"
+  },
+  {
+    "id": "baccano",
+    "title": "Baccano",
+    "category": "מסעדת ערב",
+    "coordinates": {
+      "lat": 41.9007,
+      "lng": 12.4825
+    },
+    "rating": 4.4,
+    "atmosphere": "בראסרי אירופאי",
+    "reservation": "מומלץ להזמין",
+    "notes": "בקרבת מזרקת טרווי, השפעות איטלקיות ואווירה תוססת.",
+    "tags": [
+      "brasserie",
+      "lively",
+      "dinner"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Baccano+Rome](https://www.google.com/maps/search/?api=1&query=Baccano+Rome)"
+  },
+  {
+    "id": "la-piccola-cuccagna",
+    "title": "La Piccola Cuccagna",
+    "category": "מסעדת ערב",
+    "coordinates": {
+      "lat": 41.898,
+      "lng": 12.4733
+    },
+    "rating": 4.2,
+    "atmosphere": "מסורתי",
+    "reservation": "מומלץ",
+    "notes": "מסעדה קלאסית ורגועה סמוך לפיאצה נאבונה.",
+    "tags": [
+      "classic",
+      "traditional",
+      "dinner"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+Piccola+Cuccagna+Rome](https://www.google.com/maps/search/?api=1&query=La+Piccola+Cuccagna+Rome)"
+  },
+  {
+    "id": "antico-forno-roscioli",
+    "title": "Antico Forno Roscioli*",
+    "category": "פיצה רחוב",
+    "coordinates": {
+      "lat": 41.8951,
+      "lng": 12.4738
+    },
+    "rating": 4.7,
+    "atmosphere": "פעלתני",
+    "reservation": "Walk-ins",
+    "notes": "פיצה ביאנקה, פיצה אדומה וכדורי סופלי נדירים. חובת ביקור!",
+    "tags": [
+      "pizza",
+      "bakery",
+      "street-food"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Antico+Forno+Roscioli+Rome](https://www.google.com/maps/search/?api=1&query=Antico+Forno+Roscioli+Rome)"
+  },
+  {
+    "id": "forno-campo-de-fiori",
+    "title": "Forno Campo de' Fiori",
+    "category": "פיצה רחוב",
+    "coordinates": {
+      "lat": 41.8957,
+      "lng": 12.4725
+    },
+    "rating": 4.7,
+    "atmosphere": "מסורתי",
+    "reservation": "Walk-ins",
+    "notes": "מתחרה ישיר לרושיולי, פיצות טריות לאורך כל היום.",
+    "tags": [
+      "pizza",
+      "bakery",
+      "traditional"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Forno+Campo+de%27+Fiori+Rome](https://www.google.com/maps/search/?api=1&query=Forno+Campo+de%27+Fiori+Rome)"
+  },
+  {
+    "id": "all-antico-vinaio",
+    "title": "All'Antico Vinaio",
+    "category": "כריכים",
+    "coordinates": {
+      "lat": 41.8998,
+      "lng": 12.4765
+    },
+    "rating": 4.5,
+    "atmosphere": "תורי ענק",
+    "reservation": "Walk-ins",
+    "notes": "כריכי ענק מטורפים (סקיאצ'אטה), אך צפו לתור של כ-45 דקות.",
+    "tags": [
+      "sandwiches",
+      "viral",
+      "long-lines"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=All%27Antico+Vinaio+Rome](https://www.google.com/maps/search/?api=1&query=All%27Antico+Vinaio+Rome)"
+  },
+  {
+    "id": "saporizzo",
+    "title": "Saporizzo",
+    "category": "כריכים",
+    "coordinates": {
+      "lat": 41.8962,
+      "lng": 12.496
+    },
+    "rating": 4.9,
+    "atmosphere": "קז'ואל",
+    "reservation": "Walk-ins",
+    "notes": "חלופה מושלמת וזולה לכריכי הענק, ללא התורים של וינאיו.",
+    "tags": [
+      "sandwiches",
+      "affordable",
+      "casual"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Saporizzo+Rome](https://www.google.com/maps/search/?api=1&query=Saporizzo+Rome)"
+  },
+  {
+    "id": "panino-incognito",
+    "title": "Panino Incognito",
+    "category": "כריכים",
+    "coordinates": {
+      "lat": 41.897,
+      "lng": 12.4695
+    },
+    "rating": 4.8,
+    "atmosphere": "מהיר",
+    "reservation": "Walk-ins",
+    "notes": "כריכים מגוונים מחומרי גלם טריים במחירים הוגנים.",
+    "tags": [
+      "sandwiches",
+      "quick",
+      "fair-price"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Panino+Incognito+Rome](https://www.google.com/maps/search/?api=1&query=Panino+Incognito+Rome)"
+  },
+  {
+    "id": "magnifico-food-store",
+    "title": "Magnifico Food Store",
+    "category": "מעדנייה",
+    "coordinates": {
+      "lat": 41.896,
+      "lng": 12.4715
+    },
+    "rating": 4.7,
+    "atmosphere": "בוטיקי",
+    "reservation": "Walk-ins",
+    "notes": "כריכי גבינות ונקניקים מובחרים (ניתן גם לקנות הביתה).",
+    "tags": [
+      "deli",
+      "sandwiches",
+      "boutique"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Magnifico+Food+Store+Rome](https://www.google.com/maps/search/?api=1&query=Magnifico+Food+Store+Rome)"
+  },
+  {
+    "id": "i-pizzicaroli",
+    "title": "I Pizzicaroli",
+    "category": "פוקאצ'ה",
+    "coordinates": {
+      "lat": 41.8983,
+      "lng": 12.4708
+    },
+    "rating": 4.8,
+    "atmosphere": "קליל",
+    "reservation": "Walk-ins",
+    "notes": "מתמחים בלוחות נקניקים, גבינות ופוקאצ'ות איכותיות.",
+    "tags": [
+      "focaccia",
+      "charcuterie",
+      "light"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=I+Pizzicaroli+Rome](https://www.google.com/maps/search/?api=1&query=I+Pizzicaroli+Rome)"
+  },
+  {
+    "id": "lantica-pizzeria-di-trevi",
+    "title": "L'Antica Pizzeria di Trevi",
+    "category": "פיצריה מהירה",
+    "coordinates": {
+      "lat": 41.9012,
+      "lng": 12.4842
+    },
+    "rating": 4.4,
+    "atmosphere": "קז'ואל",
+    "reservation": "Walk-ins",
+    "notes": "סגנון נאפוליטני במרחק נגיעה ממזרקת טרווי.",
+    "tags": [
+      "pizza",
+      "neapolitan",
+      "casual"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Antica+Pizzeria+di+Trevi+Rome](https://www.google.com/maps/search/?api=1&query=L%27Antica+Pizzeria+di+Trevi+Rome)"
+  },
+  {
+    "id": "il-primo-bacio",
+    "title": "Il Primo Bacio (Baccio)",
+    "category": "פיצה נאפוליטנית",
+    "coordinates": {
+      "lat": 41.902,
+      "lng": 12.4838
+    },
+    "rating": 4.3,
+    "atmosphere": "משפחתי",
+    "reservation": "Walk-ins",
+    "notes": "פיצה בעלת שוליים עבים (סגנון נאפוליטני) וטובה.",
+    "tags": [
+      "pizza",
+      "neapolitan",
+      "family"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Il+Primo+Bacio+Rome](https://www.google.com/maps/search/?api=1&query=Il+Primo+Bacio+Rome)"
+  },
+  {
+    "id": "pizza-trilussa",
+    "title": "Pizza Trilussa",
+    "category": "פיצה אל טאליו",
+    "coordinates": {
+      "lat": 41.8898,
+      "lng": 12.4708
+    },
+    "rating": 4.3,
+    "atmosphere": "מהיר",
+    "reservation": "Walk-ins",
+    "notes": "בטרסטוורה. פיצה במגשים שנחתכת לפי משקל. פתרון צהריים זול.",
+    "tags": [
+      "pizza-al-taglio",
+      "quick",
+      "affordable"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pizza+Trilussa+Rome](https://www.google.com/maps/search/?api=1&query=Pizza+Trilussa+Rome)"
+  },
+  {
+    "id": "pastaciutta",
+    "title": "Pastaciutta",
+    "category": "פסטה רחוב",
+    "coordinates": {
+      "lat": 41.9062,
+      "lng": 12.4578
+    },
+    "rating": 4.6,
+    "atmosphere": "מהיר",
+    "reservation": "Walk-ins",
+    "notes": "פסטה טרייה בכלי קרטון ליד הוותיקן. פתרון זול ומשביע.",
+    "tags": [
+      "pasta",
+      "street-food",
+      "quick"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pastaciutta+Rome](https://www.google.com/maps/search/?api=1&query=Pastaciutta+Rome)"
+  },
+  {
+    "id": "amerina",
+    "title": "Amerina",
+    "category": "סופלי ומטוגנים",
+    "coordinates": {
+      "lat": 41.9,
+      "lng": 12.466
+    },
+    "rating": 4.5,
+    "atmosphere": "מהיר",
+    "reservation": "Walk-ins",
+    "notes": "מתמחה בכדורי סופלי רומאיים מטוגנים בשלל מילויים כנשנוש.",
+    "tags": [
+      "suppli",
+      "fried",
+      "snack"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Amerina+Rome](https://www.google.com/maps/search/?api=1&query=Amerina+Rome)"
+  },
+  {
+    "id": "giselda",
+    "title": "Giselda (Gizelda)",
+    "category": "אוכל רחוב",
+    "coordinates": {
+      "lat": 41.888,
+      "lng": 12.474
+    },
+    "rating": 4.5,
+    "atmosphere": "שכונתי",
+    "reservation": "Walk-ins",
+    "notes": "בטרסטוורה. שילוב של בית קפה, מאפייה ומנות חמות.",
+    "tags": [
+      "street-food",
+      "cafe",
+      "bakery"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Giselda+Rome](https://www.google.com/maps/search/?api=1&query=Giselda+Rome)"
+  },
+  {
+    "id": "regoli-pasticceria",
+    "title": "Regoli Pasticceria*",
+    "category": "מאפייה/קינוחים",
+    "coordinates": {
+      "lat": 41.8955,
+      "lng": 12.502
+    },
+    "rating": 4.8,
+    "atmosphere": "קלאסי",
+    "reservation": "Walk-ins",
+    "notes": "מקדש ה'מריטוצו' (לחמנייה עם קצפת). רף האיכות של רומא.",
+    "tags": [
+      "bakery",
+      "dessert",
+      "maritozzo"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Regoli+Pasticceria+Rome](https://www.google.com/maps/search/?api=1&query=Regoli+Pasticceria+Rome)"
+  },
+  {
+    "id": "la-menagere-roma",
+    "title": "La Ménagère Roma*",
+    "category": "קפה/בראנץ'",
+    "coordinates": {
+      "lat": 41.903,
+      "lng": 12.479
+    },
+    "rating": 4.6,
+    "atmosphere": "אסתטי להפליא",
+    "reservation": "מומלץ",
+    "notes": "משלב בית קפה וחנות פרחים. אידיאלי לבוקר אלגנטי ורגוע.",
+    "tags": [
+      "cafe",
+      "brunch",
+      "aesthetic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+M%C3%A9nag%C3%A8re+Roma+Rome](https://www.google.com/maps/search/?api=1&query=La+M%C3%A9nag%C3%A8re+Roma+Rome)"
+  },
+  {
+    "id": "two-sizes",
+    "title": "Two Sizes*",
+    "category": "קינוחים (טירמיסו)",
+    "coordinates": {
+      "lat": 41.898,
+      "lng": 12.4702
+    },
+    "rating": 4.8,
+    "atmosphere": "מהיר",
+    "reservation": "Walk-ins",
+    "notes": "מגוון טעמי טירמיסו (קלאסי, פיסטוק) בשני גדלים נוחים לדרך.",
+    "tags": [
+      "tiramisu",
+      "dessert",
+      "quick"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Two+Sizes+Rome](https://www.google.com/maps/search/?api=1&query=Two+Sizes+Rome)"
+  },
+  {
+    "id": "pompi",
+    "title": "Pompi*",
+    "category": "קינוחים (טירמיסו)",
+    "coordinates": {
+      "lat": 41.9055,
+      "lng": 12.48
+    },
+    "rating": 4.3,
+    "atmosphere": "תעשייתי למחצה",
+    "reservation": "Walk-ins",
+    "notes": "'מלך הטירמיסו',מוכר וידוע אם כי נהיה ממוסחר עם הזמן.",
+    "tags": [
+      "tiramisu",
+      "dessert",
+      "popular"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pompi+Rome](https://www.google.com/maps/search/?api=1&query=Pompi+Rome)"
+  },
+  {
+    "id": "venchi",
+    "title": "Venchi*",
+    "category": "ג'לאטו/שוקולד",
+    "coordinates": {
+      "lat": 41.9018,
+      "lng": 12.4795
+    },
+    "rating": 4.5,
+    "atmosphere": "עמוס",
+    "reservation": "Walk-ins",
+    "notes": "גלידה עשירה וחומת שוקולד זורם מפורסמת בחנות.",
+    "tags": [
+      "gelato",
+      "chocolate",
+      "chain"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Venchi+Rome](https://www.google.com/maps/search/?api=1&query=Venchi+Rome)"
+  },
+  {
+    "id": "la-romana",
+    "title": "La Romana",
+    "category": "ג'לאטו",
+    "coordinates": {
+      "lat": 41.907,
+      "lng": 12.468
+    },
+    "rating": 4.8,
+    "atmosphere": "בוטיקי",
+    "reservation": "Walk-ins",
+    "notes": "מוזגים שוקולד מותך לתחתית הגביע. מרקם הגלידה עשיר מאוד.",
+    "tags": [
+      "gelato",
+      "quality",
+      "boutique"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+Romana+Rome](https://www.google.com/maps/search/?api=1&query=La+Romana+Rome)"
+  },
+  {
+    "id": "limone",
+    "title": "Limone*",
+    "category": "ג'לאטו",
+    "coordinates": {
+      "lat": 41.8995,
+      "lng": 12.4808
+    },
+    "rating": 4.5,
+    "atmosphere": "מרענן",
+    "reservation": "Walk-ins",
+    "notes": "התמחות בסורבה פירות וטעמי לימון עזים מדרום איטליה.",
+    "tags": [
+      "gelato",
+      "sorbet",
+      "refreshing"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Limone+Rome](https://www.google.com/maps/search/?api=1&query=Limone+Rome)"
+  },
+  {
+    "id": "slow-specialty-coffee",
+    "title": "Slow - Specialty Coffee",
+    "category": "קפה גל שלישי",
+    "coordinates": {
+      "lat": 41.8942,
+      "lng": 12.4928
+    },
+    "rating": 4.8,
+    "atmosphere": "מינימליסטי",
+    "reservation": "Walk-ins",
+    "notes": "לחובבי קפה פילטר איכותי ומאפים ברמה גבוהה.",
+    "tags": [
+      "specialty-coffee",
+      "minimalist",
+      "quality"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Slow+-+Specialty+Coffee+Rome](https://www.google.com/maps/search/?api=1&query=Slow+-+Specialty+Coffee+Rome)"
+  },
+  {
+    "id": "said-dal-1923",
+    "title": "SAID dal 1923 (Dal)",
+    "category": "קונדיטוריה",
+    "coordinates": {
+      "lat": 41.8972,
+      "lng": 12.515
+    },
+    "rating": 4.7,
+    "atmosphere": "וינטג' אפלולי",
+    "reservation": "Walk-ins",
+    "notes": "מפעל שוקולד עתיק עם השוקו החם והסמיך ביותר בעיר.",
+    "tags": [
+      "chocolate",
+      "vintage",
+      "hot-chocolate"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=SAID+dal+1923+Rome](https://www.google.com/maps/search/?api=1&query=SAID+dal+1923+Rome)"
+  },
+  {
+    "id": "le-levain",
+    "title": "Le Levain (Le Lavin)",
+    "category": "פטיסרי צרפתי",
+    "coordinates": {
+      "lat": 41.8892,
+      "lng": 12.47
+    },
+    "rating": 4.8,
+    "atmosphere": "איכותי",
+    "reservation": "Walk-ins",
+    "notes": "קרואסונים מרובי דפדפים ומאפי חמאה שמתחרים בפריז (טרסטוורה).",
+    "tags": [
+      "patisserie",
+      "french",
+      "bakery"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Le+Levain+Rome](https://www.google.com/maps/search/?api=1&query=Le+Levain+Rome)"
+  },
+  {
+    "id": "lantico-forno-trevi",
+    "title": "L'Antico Forno Trevi*",
+    "category": "קפה ומאפייה",
+    "coordinates": {
+      "lat": 41.9008,
+      "lng": 12.482
+    },
+    "rating": 4.2,
+    "atmosphere": "עמוס",
+    "reservation": "Walk-ins",
+    "notes": "קפה איטלקי מהיר וקורנטו קרוב למזרקת טרווי.",
+    "tags": [
+      "cafe",
+      "bakery",
+      "busy"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Antico+Forno+Trevi+Rome](https://www.google.com/maps/search/?api=1&query=L%27Antico+Forno+Trevi+Rome)"
+  },
+  {
+    "id": "ginger-sapori-e-salute",
+    "title": "Ginger Sapori e Salute",
+    "category": "בראנץ'",
+    "coordinates": {
+      "lat": 41.9048,
+      "lng": 12.4812
+    },
+    "rating": 4.4,
+    "atmosphere": "מואר",
+    "reservation": "מומלץ",
+    "notes": "מנות צבעוניות, שייקים וקערות אסאי לבוקר בריא ומרענן.",
+    "tags": [
+      "brunch",
+      "healthy",
+      "smoothies"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Ginger+Sapori+e+Salute+Rome](https://www.google.com/maps/search/?api=1&query=Ginger+Sapori+e+Salute+Rome)"
+  },
+  {
+    "id": "panfuwa",
+    "title": "Panfuwa",
+    "category": "קפה וקינוחים",
+    "coordinates": {
+      "lat": 41.8968,
+      "lng": 12.469
+    },
+    "rating": 4.6,
+    "atmosphere": "צעיר",
+    "reservation": "Walk-ins",
+    "notes": "פנקייקים יפניים אווריריים ורוטטים, חוויה ויזואלית ומתוקה.",
+    "tags": [
+      "pancakes",
+      "japanese",
+      "trendy"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Panfuwa+Rome](https://www.google.com/maps/search/?api=1&query=Panfuwa+Rome)"
+  },
+  {
+    "id": "the-coffee",
+    "title": "The Coffee",
+    "category": "קפה גל שלישי",
+    "coordinates": {
+      "lat": 41.8962,
+      "lng": 12.4718
+    },
+    "rating": 4.6,
+    "atmosphere": "יפני ונקי",
+    "reservation": "Walk-ins",
+    "notes": "התמקדות באיכות הקפה באווירה שקטה הרחק מהמרכז.",
+    "tags": [
+      "coffee",
+      "minimalist",
+      "quiet"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=The+Coffee+Rome](https://www.google.com/maps/search/?api=1&query=The+Coffee+Rome)"
+  },
+  {
+    "id": "belvi",
+    "title": "Belvi (Roscioli Caffè)",
+    "category": "בית קפה",
+    "coordinates": {
+      "lat": 41.8945,
+      "lng": 12.475
+    },
+    "rating": 4.5,
+    "atmosphere": "קלאסי",
+    "reservation": "Walk-ins",
+    "notes": "מעולה לאספרסו זריז על הבר עם מאפה איכותי.",
+    "tags": [
+      "cafe",
+      "espresso",
+      "classic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Belvi+Rome](https://www.google.com/maps/search/?api=1&query=Belvi+Rome)"
+  },
+  {
+    "id": "il-bar-della-musa",
+    "title": "Il Bar della Musa*",
+    "category": "קוקטייל בר",
+    "coordinates": {
+      "lat": 41.9135,
+      "lng": 12.4915
+    },
+    "rating": 4.8,
+    "atmosphere": "אינטימי",
+    "reservation": "מומלץ להזמין",
+    "notes": "בפאלאצו טליה. עיצוב מהמם וקוקטיילים מושלמים לערב יוקרתי.",
+    "tags": [
+      "cocktails",
+      "upscale",
+      "intimate"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Il+Bar+della+Musa+Rome](https://www.google.com/maps/search/?api=1&query=Il+Bar+della+Musa+Rome)"
+  },
+  {
+    "id": "drink-kong",
+    "title": "Drink Kong",
+    "category": "בר מיקסולוגיה",
+    "coordinates": {
+      "lat": 41.895,
+      "lng": 12.4975
+    },
+    "rating": 4.7,
+    "atmosphere": "סייברפאנק",
+    "reservation": "חובה להזמין",
+    "notes": "מהברים הטובים בעולם. עיצוב מועדוני וקוקטיילים אוונגרדיים.",
+    "tags": [
+      "mixology",
+      "cyberpunk",
+      "top-bar"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Drink+Kong+Rome](https://www.google.com/maps/search/?api=1&query=Drink+Kong+Rome)"
+  },
+  {
+    "id": "loratorio-trastevere",
+    "title": "L'Oratorio Trastevere",
+    "category": "לאונג' קיץ",
+    "coordinates": {
+      "lat": 41.8875,
+      "lng": 12.472
+    },
+    "rating": 4.8,
+    "atmosphere": "צ'יל",
+    "reservation": "Walk-ins",
+    "notes": "פופ-אפ בקיץ עם משחקים וקולנוע באוויר הפתוח בטרסטוורה.",
+    "tags": [
+      "summer-lounge",
+      "pop-up",
+      "relaxed"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Oratorio+Trastevere+Rome](https://www.google.com/maps/search/?api=1&query=L%27Oratorio+Trastevere+Rome)"
+  },
+  {
+    "id": "blackmarket-hall",
+    "title": "Blackmarket Hall",
+    "category": "בר ומוזיקה",
+    "coordinates": {
+      "lat": 41.896,
+      "lng": 12.493
+    },
+    "rating": 4.6,
+    "atmosphere": "בוהמייני",
+    "reservation": "מומלץ להזמין",
+    "notes": "במונטי. עיצוב שנות ה-20, הופעות חיות ואווירה אפלולית טובה.",
+    "tags": [
+      "bar",
+      "live-music",
+      "bohemian"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Blackmarket+Hall+Rome](https://www.google.com/maps/search/?api=1&query=Blackmarket+Hall+Rome)"
+  },
+  {
+    "id": "divinity-rooftop",
+    "title": "Divinity Rooftop",
+    "category": "בר רופטופ",
+    "coordinates": {
+      "lat": 41.8983,
+      "lng": 12.477
+    },
+    "rating": 4.5,
+    "atmosphere": "רומנטי",
+    "reservation": "חובה להזמין",
+    "notes": "אידיאלי לשעות השקיעה עם נוף לגגות העיר (תמחור גבוה).",
+    "tags": [
+      "rooftop",
+      "romantic",
+      "sunset"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Divinity+Rooftop+Rome](https://www.google.com/maps/search/?api=1&query=Divinity+Rooftop+Rome)"
+  },
+  {
+    "id": "hotel-fontana-rooftop",
+    "title": "Hotel Fontana Rooftop*",
+    "category": "בר רופטופ",
+    "coordinates": {
+      "lat": 41.9008,
+      "lng": 12.4831
+    },
+    "rating": 4.3,
+    "atmosphere": "צמוד למזרקה",
+    "reservation": "חובה להזמין",
+    "notes": "התצפית הטובה ביותר לטרווי מלמעלה, בתמורה למשקאות יקרים.",
+    "tags": [
+      "rooftop",
+      "view",
+      "expensive"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Hotel+Fontana+Rooftop+Rome](https://www.google.com/maps/search/?api=1&query=Hotel+Fontana+Rooftop+Rome)"
+  },
+  {
+    "id": "flor-de-maga",
+    "title": "Flor de Maga (Adona)",
+    "category": "בר בוטני",
+    "coordinates": {
+      "lat": 41.8965,
+      "lng": 12.471
+    },
+    "rating": 4.6,
+    "atmosphere": "קיצי",
+    "reservation": "לבדוק שעות",
+    "notes": "בר פתוח בפארק לבילוי קריר בערבי הקיץ של רומא.",
+    "tags": [
+      "botanical",
+      "outdoor",
+      "summer"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Flor+de+Maga+Rome](https://www.google.com/maps/search/?api=1&query=Flor+de+Maga+Rome)"
+  },
+  {
+    "id": "chiosco-vittorio",
+    "title": "Chiosco Vittorio",
+    "category": "בר יין/טבעי",
+    "coordinates": {
+      "lat": 41.895,
+      "lng": 12.505
+    },
+    "rating": 4.2,
+    "atmosphere": "פתוח",
+    "reservation": "Walk-ins",
+    "notes": "בפיאצה ויטוריו. קהל אקלקטי, יינות טבעיים מהאזור.",
+    "tags": [
+      "wine-bar",
+      "natural-wine",
+      "eclectic"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Chiosco+Vittorio+Rome](https://www.google.com/maps/search/?api=1&query=Chiosco+Vittorio+Rome)"
+  },
+  {
+    "id": "langolo-trieste",
+    "title": "L'Angolo Trieste",
+    "category": "פאב מקומי",
+    "coordinates": {
+      "lat": 41.918,
+      "lng": 12.508
+    },
+    "rating": 4.4,
+    "atmosphere": "קז'ואל",
+    "reservation": "Walk-ins",
+    "notes": "מעולה להתרחק מתיירים ולשתות בירה בנינוחות.",
+    "tags": [
+      "pub",
+      "casual",
+      "local"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Angolo+Trieste+Rome](https://www.google.com/maps/search/?api=1&query=L%27Angolo+Trieste+Rome)"
+  },
+  {
+    "id": "daruma",
+    "title": "Daruma",
+    "category": "סושי בר",
+    "coordinates": {
+      "lat": 41.896,
+      "lng": 12.4825
+    },
+    "rating": 4.3,
+    "atmosphere": "מהיר",
+    "reservation": "Walk-ins",
+    "notes": "פתרון פשוט ואמין למי שרוצה הפוגה קלה מהפסטות.",
+    "tags": [
+      "sushi",
+      "quick",
+      "chain"
+    ],
+    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Daruma+Rome](https://www.google.com/maps/search/?api=1&query=Daruma+Rome)"
+  }
+]
