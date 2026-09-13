@@ -1,8 +1,8 @@
 /**
- * Main Application Orchestrator Module
+ * Main Application Orchestrator Module - Phase 2
  */
 import { fetchPlaces } from './api.js';
-import { initMap, renderMarkers, locateUser } from './map.js';
+import { initMap, renderMarkers, locateUser, flyToAndOpenMarker } from './map.js';
 import { initUI, showToast, hideLoader } from './ui.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -16,19 +16,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 3. Initialize UI & Event Handlers
     initUI(
       places,
-      (activeCategories) => {
+      (activeCategoryIds) => {
         // Real-time filter callback
-        renderMarkers(places, activeCategories);
+        renderMarkers(places, activeCategoryIds);
       },
       () => {
         // Locate FAB button click callback
         locateUser((errorMsg) => {
           showToast(errorMsg, 4500);
         });
+      },
+      (placeId) => {
+        // Search result item click callback
+        flyToAndOpenMarker(placeId);
       }
     );
 
-    // 4. Initial Marker Render (all categories active by default)
+    // 4. Initial Marker Render
     renderMarkers(places);
 
   } catch (error) {

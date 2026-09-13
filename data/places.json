@@ -2,7 +2,6 @@
   {
     "id": "colosseum",
     "title": "Colosseum (קולוסיאום)",
-    "category": "היסטוריה",
     "coordinates": {
       "lat": 41.8902,
       "lng": 12.4922
@@ -16,12 +15,13 @@
       "landmark",
       "must-see"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Colosseum+Rome](https://www.google.com/maps/search/?api=1&query=Colosseum+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Colosseum+Rome",
+    "categoryId": "1",
+    "category": 1
   },
   {
     "id": "vatican",
     "title": "Vatican (הוותיקן)",
-    "category": "היסטוריה",
     "coordinates": {
       "lat": 41.9029,
       "lng": 12.4534
@@ -35,12 +35,13 @@
       "museum",
       "religious"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Vatican+Rome](https://www.google.com/maps/search/?api=1&query=Vatican+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Vatican+Rome",
+    "categoryId": "1",
+    "category": 1
   },
   {
     "id": "pantheon",
     "title": "Pantheon (פנתאון)",
-    "category": "היסטוריה",
     "coordinates": {
       "lat": 41.8986,
       "lng": 12.4769
@@ -54,12 +55,13 @@
       "architecture",
       "classic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pantheon+Rome](https://www.google.com/maps/search/?api=1&query=Pantheon+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Rome",
+    "categoryId": "1",
+    "category": 1
   },
   {
     "id": "trevi-fountain",
     "title": "Trevi Fountain (מזרקת טרווי)",
-    "category": "היסטוריה",
     "coordinates": {
       "lat": 41.9009,
       "lng": 12.4833
@@ -73,12 +75,13 @@
       "crowded",
       "fountain"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome](https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome",
+    "categoryId": "1",
+    "category": 1
   },
   {
     "id": "spanish-steps",
     "title": "Spanish Steps (המדרגות הספרדיות)",
-    "category": "היסטוריה",
     "coordinates": {
       "lat": 41.906,
       "lng": 12.4828
@@ -92,12 +95,13 @@
       "elegant",
       "strict-rules"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome](https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome",
+    "categoryId": "1",
+    "category": 1
   },
   {
     "id": "altare-della-patria",
     "title": "Altare della Patria",
-    "category": "תצפית",
     "coordinates": {
       "lat": 41.8946,
       "lng": 12.4828
@@ -111,12 +115,13 @@
       "panoramic",
       "monument"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Altare+della+Patria+Rome](https://www.google.com/maps/search/?api=1&query=Altare+della+Patria+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Altare+della+Patria+Rome",
+    "categoryId": "1",
+    "category": 1
   },
   {
     "id": "villa-borghese",
     "title": "Villa Borghese",
-    "category": "פארק",
     "coordinates": {
       "lat": 41.9142,
       "lng": 12.4921
@@ -130,12 +135,13 @@
       "nature",
       "romantic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Rome](https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Rome",
+    "categoryId": "6",
+    "category": 6
   },
   {
     "id": "rome-rose-garden",
     "title": "Rome Rose Garden",
-    "category": "פארק",
     "coordinates": {
       "lat": 41.8833,
       "lng": 12.4828
@@ -149,12 +155,13 @@
       "romantic",
       "seasonal"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Rome+Rose+Garden+Rome](https://www.google.com/maps/search/?api=1&query=Rome+Rose+Garden+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Rome+Rose+Garden+Rome",
+    "categoryId": "6",
+    "category": 6
   },
   {
     "id": "parco-di-caracalla",
     "title": "Parco di Caracalla",
-    "category": "פארק",
     "coordinates": {
       "lat": 41.8792,
       "lng": 12.4925
@@ -168,12 +175,13 @@
       "quiet",
       "ruins"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Parco+di+Caracalla+Rome](https://www.google.com/maps/search/?api=1&query=Parco+di+Caracalla+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Parco+di+Caracalla+Rome",
+    "categoryId": "6",
+    "category": 6
   },
   {
     "id": "swiss-institute",
     "title": "Swiss Institute",
-    "category": "פנינה נסתרת",
     "coordinates": {
       "lat": 41.908,
       "lng": 12.487
@@ -187,12 +195,13 @@
       "art",
       "date-spot"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Swiss+Institute+Rome](https://www.google.com/maps/search/?api=1&query=Swiss+Institute+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Swiss+Institute+Rome",
+    "categoryId": "6",
+    "category": 6
   },
   {
     "id": "lovers-fountain",
     "title": "Lover's Fountain",
-    "category": "פנינה נסתרת",
     "coordinates": {
       "lat": 41.901,
       "lng": 12.4835
@@ -206,12 +215,13 @@
       "romantic",
       "fountain"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Lover%27s+Fountain+Rome](https://www.google.com/maps/search/?api=1&query=Lover%27s+Fountain+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Lover%27s+Fountain+Rome",
+    "categoryId": "6",
+    "category": 6
   },
   {
     "id": "monti",
     "title": "Monti (שכונת מונטי)",
-    "category": "שיטוט",
     "coordinates": {
       "lat": 41.895,
       "lng": 12.491
@@ -225,12 +235,13 @@
       "boutique",
       "walking"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Monti+Rome](https://www.google.com/maps/search/?api=1&query=Monti+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Monti+Rome",
+    "categoryId": "6",
+    "category": 6
   },
   {
     "id": "tiber-river",
     "title": "Tiber River (מ-21:00)",
-    "category": "אירוע קיץ",
     "coordinates": {
       "lat": 41.889,
       "lng": 12.472
@@ -244,12 +255,13 @@
       "festival",
       "nightlife"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Tiber+River+Rome](https://www.google.com/maps/search/?api=1&query=Tiber+River+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Tiber+River+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "the-oddity-patch-bar",
     "title": "The Oddity Patch Bar",
-    "category": "אטרקציה/קניות",
     "coordinates": {
       "lat": 41.8955,
       "lng": 12.4918
@@ -263,12 +275,13 @@
       "custom",
       "trendy"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=The+Oddity+Patch+Bar+Rome](https://www.google.com/maps/search/?api=1&query=The+Oddity+Patch+Bar+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Oddity+Patch+Bar+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "rega-bijoux",
     "title": "Rega Bijoux",
-    "category": "אטרקציה/קניות",
     "coordinates": {
       "lat": 41.9002,
       "lng": 12.4715
@@ -282,12 +295,13 @@
       "boutique",
       "gifts"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Rega+Bijoux+Rome](https://www.google.com/maps/search/?api=1&query=Rega+Bijoux+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Rega+Bijoux+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "paolina-roma",
     "title": "Paolina Roma",
-    "category": "אטרקציה/קניות",
     "coordinates": {
       "lat": 41.898,
       "lng": 12.474
@@ -301,12 +315,13 @@
       "custom",
       "young"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Paolina+Roma+Rome](https://www.google.com/maps/search/?api=1&query=Paolina+Roma+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Paolina+Roma+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "pifebo-vintage",
     "title": "Pifebo Vintage",
-    "category": "קניות",
     "coordinates": {
       "lat": 41.8958,
       "lng": 12.492
@@ -320,12 +335,13 @@
       "shopping",
       "retro"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pifebo+Vintage+Rome](https://www.google.com/maps/search/?api=1&query=Pifebo+Vintage+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Pifebo+Vintage+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "via-del-corso-venezia",
     "title": "Via del Corso & Venezia",
-    "category": "קניות",
     "coordinates": {
       "lat": 41.897,
       "lng": 12.481
@@ -339,12 +355,13 @@
       "commercial",
       "busy"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Via+del+Corso+%26+Venezia+Rome](https://www.google.com/maps/search/?api=1&query=Via+del+Corso+%26+Venezia+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Via+del+Corso+%26+Venezia+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "mercato-di-porta-portese",
     "title": "Mercato di Porta Portese",
-    "category": "שוק פשפשים",
     "coordinates": {
       "lat": 41.882,
       "lng": 12.472
@@ -358,12 +375,13 @@
       "authentic",
       "beware-pickpockets"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Mercato+di+Porta+Portese+Rome](https://www.google.com/maps/search/?api=1&query=Mercato+di+Porta+Portese+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Porta+Portese+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "campo-de-fiori-market",
     "title": "Campo de' Fiori Market",
-    "category": "שוק פתוח",
     "coordinates": {
       "lat": 41.8956,
       "lng": 12.4722
@@ -377,12 +395,13 @@
       "touristy",
       "colorful"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori+Market+Rome](https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori+Market+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori+Market+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "porta-di-roma-euroma2",
     "title": "Porta di Roma / Euroma2",
-    "category": "קניונים",
     "coordinates": {
       "lat": 41.97,
       "lng": 12.54
@@ -396,12 +415,13 @@
       "modern",
       "suburban"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Porta+di+Roma+Rome](https://www.google.com/maps/search/?api=1&query=Porta+di+Roma+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Porta+di+Roma+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "the-one-boutique-spa",
     "title": "The One Boutique Spa",
-    "category": "ספא",
     "coordinates": {
       "lat": 41.9015,
       "lng": 12.484
@@ -415,12 +435,13 @@
       "relaxing",
       "couples"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=The+One+Boutique+Spa+Rome](https://www.google.com/maps/search/?api=1&query=The+One+Boutique+Spa+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=The+One+Boutique+Spa+Rome",
+    "categoryId": "5",
+    "category": 5
   },
   {
     "id": "gigi-rigolatto",
     "title": "Gigi Rigolatto (Gigis)*",
-    "category": "רופטופ/מסעדה",
     "coordinates": {
       "lat": 41.8982,
       "lng": 12.4775
@@ -434,12 +455,13 @@
       "restaurant",
       "upscale"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Gigi+Rigolatto+Rome](https://www.google.com/maps/search/?api=1&query=Gigi+Rigolatto+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Gigi+Rigolatto+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "mimi-e-coco",
     "title": "Mimi e Coco*",
-    "category": "יין ומסעדה",
     "coordinates": {
       "lat": 41.8981,
       "lng": 12.4705
@@ -453,12 +475,13 @@
       "lively",
       "restaurant"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Mimi+e+Coco+Rome](https://www.google.com/maps/search/?api=1&query=Mimi+e+Coco+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Mimi+e+Coco+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "da-enzo-al-29",
     "title": "Da Enzo al 29",
-    "category": "מסעדת ישיבה",
     "coordinates": {
       "lat": 41.8885,
       "lng": 12.4776
@@ -472,12 +495,13 @@
       "authentic",
       "no-reservations"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome](https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "fiaschetteria-beltramme",
     "title": "Fiaschetteria Beltramme",
-    "category": "מסעדת ישיבה",
     "coordinates": {
       "lat": 41.9052,
       "lng": 12.4808
@@ -491,12 +515,13 @@
       "family",
       "hidden-gem"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Fiaschetteria+Beltramme+Rome](https://www.google.com/maps/search/?api=1&query=Fiaschetteria+Beltramme+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Fiaschetteria+Beltramme+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "la-tavernetta-48",
     "title": "La Tavernetta 48",
-    "category": "מסעדת ישיבה",
     "coordinates": {
       "lat": 41.8975,
       "lng": 12.476
@@ -510,12 +535,13 @@
       "hidden",
       "quality"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+Tavernetta+48+Rome](https://www.google.com/maps/search/?api=1&query=La+Tavernetta+48+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Tavernetta+48+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "santi-40",
     "title": "Santi 40",
-    "category": "מסעדת ערב",
     "coordinates": {
       "lat": 41.8895,
       "lng": 12.471
@@ -529,12 +555,13 @@
       "dinner",
       "intimate"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Santi+40+Rome](https://www.google.com/maps/search/?api=1&query=Santi+40+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Santi+40+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "deroma-farine-romane",
     "title": "DeRoma (Farine Romane)",
-    "category": "מסעדת ישיבה",
     "coordinates": {
       "lat": 41.9042,
       "lng": 12.4805
@@ -548,12 +575,13 @@
       "cozy",
       "restaurant"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=DeRoma+Farine+Romane+Rome](https://www.google.com/maps/search/?api=1&query=DeRoma+Farine+Romane+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=DeRoma+Farine+Romane+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "interno-92",
     "title": "Interno 92 (Intero 92)",
-    "category": "מסעדת ערב",
     "coordinates": {
       "lat": 41.9085,
       "lng": 12.451
@@ -567,12 +595,13 @@
       "meat",
       "modern-rustic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Interno+92+Rome](https://www.google.com/maps/search/?api=1&query=Interno+92+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Interno+92+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "felice-a-testaccio",
     "title": "Felice a Testaccio",
-    "category": "מסעדת ישיבה",
     "coordinates": {
       "lat": 41.8785,
       "lng": 12.4782
@@ -586,12 +615,13 @@
       "pasta",
       "dynamic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome](https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "da-pancrazio-dal-1922",
     "title": "Da Pancrazio dal 1922",
-    "category": "מסעדת ערב",
     "coordinates": {
       "lat": 41.8953,
       "lng": 12.4731
@@ -605,12 +635,13 @@
       "dinner",
       "theatrical"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Da+Pancrazio+dal+1922+Rome](https://www.google.com/maps/search/?api=1&query=Da+Pancrazio+dal+1922+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Da+Pancrazio+dal+1922+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "caligola",
     "title": "Caligola",
-    "category": "מסעדת ערב",
     "coordinates": {
       "lat": 41.886,
       "lng": 12.47
@@ -624,12 +655,13 @@
       "creative",
       "dynamic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Caligola+Rome](https://www.google.com/maps/search/?api=1&query=Caligola+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Caligola+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "baccano",
     "title": "Baccano",
-    "category": "מסעדת ערב",
     "coordinates": {
       "lat": 41.9007,
       "lng": 12.4825
@@ -643,12 +675,13 @@
       "lively",
       "dinner"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Baccano+Rome](https://www.google.com/maps/search/?api=1&query=Baccano+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Baccano+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "la-piccola-cuccagna",
     "title": "La Piccola Cuccagna",
-    "category": "מסעדת ערב",
     "coordinates": {
       "lat": 41.898,
       "lng": 12.4733
@@ -662,12 +695,13 @@
       "traditional",
       "dinner"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+Piccola+Cuccagna+Rome](https://www.google.com/maps/search/?api=1&query=La+Piccola+Cuccagna+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Piccola+Cuccagna+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "antico-forno-roscioli",
     "title": "Antico Forno Roscioli*",
-    "category": "פיצה רחוב",
     "coordinates": {
       "lat": 41.8951,
       "lng": 12.4738
@@ -681,12 +715,13 @@
       "bakery",
       "street-food"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Antico+Forno+Roscioli+Rome](https://www.google.com/maps/search/?api=1&query=Antico+Forno+Roscioli+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Antico+Forno+Roscioli+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "forno-campo-de-fiori",
     "title": "Forno Campo de' Fiori",
-    "category": "פיצה רחוב",
     "coordinates": {
       "lat": 41.8957,
       "lng": 12.4725
@@ -700,12 +735,13 @@
       "bakery",
       "traditional"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Forno+Campo+de%27+Fiori+Rome](https://www.google.com/maps/search/?api=1&query=Forno+Campo+de%27+Fiori+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Forno+Campo+de%27+Fiori+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "all-antico-vinaio",
     "title": "All'Antico Vinaio",
-    "category": "כריכים",
     "coordinates": {
       "lat": 41.8998,
       "lng": 12.4765
@@ -719,12 +755,13 @@
       "viral",
       "long-lines"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=All%27Antico+Vinaio+Rome](https://www.google.com/maps/search/?api=1&query=All%27Antico+Vinaio+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=All%27Antico+Vinaio+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "saporizzo",
     "title": "Saporizzo",
-    "category": "כריכים",
     "coordinates": {
       "lat": 41.8962,
       "lng": 12.496
@@ -738,12 +775,13 @@
       "affordable",
       "casual"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Saporizzo+Rome](https://www.google.com/maps/search/?api=1&query=Saporizzo+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Saporizzo+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "panino-incognito",
     "title": "Panino Incognito",
-    "category": "כריכים",
     "coordinates": {
       "lat": 41.897,
       "lng": 12.4695
@@ -757,12 +795,13 @@
       "quick",
       "fair-price"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Panino+Incognito+Rome](https://www.google.com/maps/search/?api=1&query=Panino+Incognito+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Panino+Incognito+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "magnifico-food-store",
     "title": "Magnifico Food Store",
-    "category": "מעדנייה",
     "coordinates": {
       "lat": 41.896,
       "lng": 12.4715
@@ -776,12 +815,13 @@
       "sandwiches",
       "boutique"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Magnifico+Food+Store+Rome](https://www.google.com/maps/search/?api=1&query=Magnifico+Food+Store+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Magnifico+Food+Store+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "i-pizzicaroli",
     "title": "I Pizzicaroli",
-    "category": "פוקאצ'ה",
     "coordinates": {
       "lat": 41.8983,
       "lng": 12.4708
@@ -795,12 +835,13 @@
       "charcuterie",
       "light"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=I+Pizzicaroli+Rome](https://www.google.com/maps/search/?api=1&query=I+Pizzicaroli+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=I+Pizzicaroli+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "lantica-pizzeria-di-trevi",
     "title": "L'Antica Pizzeria di Trevi",
-    "category": "פיצריה מהירה",
     "coordinates": {
       "lat": 41.9012,
       "lng": 12.4842
@@ -814,12 +855,13 @@
       "neapolitan",
       "casual"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Antica+Pizzeria+di+Trevi+Rome](https://www.google.com/maps/search/?api=1&query=L%27Antica+Pizzeria+di+Trevi+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Antica+Pizzeria+di+Trevi+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "il-primo-bacio",
     "title": "Il Primo Bacio (Baccio)",
-    "category": "פיצה נאפוליטנית",
     "coordinates": {
       "lat": 41.902,
       "lng": 12.4838
@@ -833,12 +875,13 @@
       "neapolitan",
       "family"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Il+Primo+Bacio+Rome](https://www.google.com/maps/search/?api=1&query=Il+Primo+Bacio+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Il+Primo+Bacio+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "pizza-trilussa",
     "title": "Pizza Trilussa",
-    "category": "פיצה אל טאליו",
     "coordinates": {
       "lat": 41.8898,
       "lng": 12.4708
@@ -852,12 +895,13 @@
       "quick",
       "affordable"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pizza+Trilussa+Rome](https://www.google.com/maps/search/?api=1&query=Pizza+Trilussa+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Pizza+Trilussa+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "pastaciutta",
     "title": "Pastaciutta",
-    "category": "פסטה רחוב",
     "coordinates": {
       "lat": 41.9062,
       "lng": 12.4578
@@ -871,12 +915,13 @@
       "street-food",
       "quick"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pastaciutta+Rome](https://www.google.com/maps/search/?api=1&query=Pastaciutta+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Pastaciutta+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "amerina",
     "title": "Amerina",
-    "category": "סופלי ומטוגנים",
     "coordinates": {
       "lat": 41.9,
       "lng": 12.466
@@ -890,12 +935,13 @@
       "fried",
       "snack"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Amerina+Rome](https://www.google.com/maps/search/?api=1&query=Amerina+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Amerina+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "giselda",
     "title": "Giselda (Gizelda)",
-    "category": "אוכל רחוב",
     "coordinates": {
       "lat": 41.888,
       "lng": 12.474
@@ -909,12 +955,13 @@
       "cafe",
       "bakery"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Giselda+Rome](https://www.google.com/maps/search/?api=1&query=Giselda+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Giselda+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "regoli-pasticceria",
     "title": "Regoli Pasticceria*",
-    "category": "מאפייה/קינוחים",
     "coordinates": {
       "lat": 41.8955,
       "lng": 12.502
@@ -928,12 +975,13 @@
       "dessert",
       "maritozzo"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Regoli+Pasticceria+Rome](https://www.google.com/maps/search/?api=1&query=Regoli+Pasticceria+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Regoli+Pasticceria+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "la-menagere-roma",
     "title": "La Ménagère Roma*",
-    "category": "קפה/בראנץ'",
     "coordinates": {
       "lat": 41.903,
       "lng": 12.479
@@ -947,12 +995,13 @@
       "brunch",
       "aesthetic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+M%C3%A9nag%C3%A8re+Roma+Rome](https://www.google.com/maps/search/?api=1&query=La+M%C3%A9nag%C3%A8re+Roma+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=La+M%C3%A9nag%C3%A8re+Roma+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "two-sizes",
     "title": "Two Sizes*",
-    "category": "קינוחים (טירמיסו)",
     "coordinates": {
       "lat": 41.898,
       "lng": 12.4702
@@ -966,12 +1015,13 @@
       "dessert",
       "quick"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Two+Sizes+Rome](https://www.google.com/maps/search/?api=1&query=Two+Sizes+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Two+Sizes+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "pompi",
     "title": "Pompi*",
-    "category": "קינוחים (טירמיסו)",
     "coordinates": {
       "lat": 41.9055,
       "lng": 12.48
@@ -985,12 +1035,13 @@
       "dessert",
       "popular"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Pompi+Rome](https://www.google.com/maps/search/?api=1&query=Pompi+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Pompi+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "venchi",
     "title": "Venchi*",
-    "category": "ג'לאטו/שוקולד",
     "coordinates": {
       "lat": 41.9018,
       "lng": 12.4795
@@ -1004,12 +1055,13 @@
       "chocolate",
       "chain"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Venchi+Rome](https://www.google.com/maps/search/?api=1&query=Venchi+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Venchi+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "la-romana",
     "title": "La Romana",
-    "category": "ג'לאטו",
     "coordinates": {
       "lat": 41.907,
       "lng": 12.468
@@ -1023,12 +1075,13 @@
       "quality",
       "boutique"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=La+Romana+Rome](https://www.google.com/maps/search/?api=1&query=La+Romana+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Romana+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "limone",
     "title": "Limone*",
-    "category": "ג'לאטו",
     "coordinates": {
       "lat": 41.8995,
       "lng": 12.4808
@@ -1042,12 +1095,13 @@
       "sorbet",
       "refreshing"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Limone+Rome](https://www.google.com/maps/search/?api=1&query=Limone+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Limone+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "slow-specialty-coffee",
     "title": "Slow - Specialty Coffee",
-    "category": "קפה גל שלישי",
     "coordinates": {
       "lat": 41.8942,
       "lng": 12.4928
@@ -1061,12 +1115,13 @@
       "minimalist",
       "quality"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Slow+-+Specialty+Coffee+Rome](https://www.google.com/maps/search/?api=1&query=Slow+-+Specialty+Coffee+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Slow+-+Specialty+Coffee+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "said-dal-1923",
     "title": "SAID dal 1923 (Dal)",
-    "category": "קונדיטוריה",
     "coordinates": {
       "lat": 41.8972,
       "lng": 12.515
@@ -1080,12 +1135,13 @@
       "vintage",
       "hot-chocolate"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=SAID+dal+1923+Rome](https://www.google.com/maps/search/?api=1&query=SAID+dal+1923+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=SAID+dal+1923+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "le-levain",
     "title": "Le Levain (Le Lavin)",
-    "category": "פטיסרי צרפתי",
     "coordinates": {
       "lat": 41.8892,
       "lng": 12.47
@@ -1099,12 +1155,13 @@
       "french",
       "bakery"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Le+Levain+Rome](https://www.google.com/maps/search/?api=1&query=Le+Levain+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Levain+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "lantico-forno-trevi",
     "title": "L'Antico Forno Trevi*",
-    "category": "קפה ומאפייה",
     "coordinates": {
       "lat": 41.9008,
       "lng": 12.482
@@ -1118,12 +1175,13 @@
       "bakery",
       "busy"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Antico+Forno+Trevi+Rome](https://www.google.com/maps/search/?api=1&query=L%27Antico+Forno+Trevi+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Antico+Forno+Trevi+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "ginger-sapori-e-salute",
     "title": "Ginger Sapori e Salute",
-    "category": "בראנץ'",
     "coordinates": {
       "lat": 41.9048,
       "lng": 12.4812
@@ -1137,12 +1195,13 @@
       "healthy",
       "smoothies"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Ginger+Sapori+e+Salute+Rome](https://www.google.com/maps/search/?api=1&query=Ginger+Sapori+e+Salute+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginger+Sapori+e+Salute+Rome",
+    "categoryId": "2",
+    "category": 2
   },
   {
     "id": "panfuwa",
     "title": "Panfuwa",
-    "category": "קפה וקינוחים",
     "coordinates": {
       "lat": 41.8968,
       "lng": 12.469
@@ -1156,12 +1215,13 @@
       "japanese",
       "trendy"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Panfuwa+Rome](https://www.google.com/maps/search/?api=1&query=Panfuwa+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Panfuwa+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "the-coffee",
     "title": "The Coffee",
-    "category": "קפה גל שלישי",
     "coordinates": {
       "lat": 41.8962,
       "lng": 12.4718
@@ -1175,12 +1235,13 @@
       "minimalist",
       "quiet"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=The+Coffee+Rome](https://www.google.com/maps/search/?api=1&query=The+Coffee+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Coffee+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "belvi",
     "title": "Belvi (Roscioli Caffè)",
-    "category": "בית קפה",
     "coordinates": {
       "lat": 41.8945,
       "lng": 12.475
@@ -1194,12 +1255,13 @@
       "espresso",
       "classic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Belvi+Rome](https://www.google.com/maps/search/?api=1&query=Belvi+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Belvi+Rome",
+    "categoryId": "3",
+    "category": 3
   },
   {
     "id": "il-bar-della-musa",
     "title": "Il Bar della Musa*",
-    "category": "קוקטייל בר",
     "coordinates": {
       "lat": 41.9135,
       "lng": 12.4915
@@ -1213,12 +1275,13 @@
       "upscale",
       "intimate"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Il+Bar+della+Musa+Rome](https://www.google.com/maps/search/?api=1&query=Il+Bar+della+Musa+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Il+Bar+della+Musa+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "drink-kong",
     "title": "Drink Kong",
-    "category": "בר מיקסולוגיה",
     "coordinates": {
       "lat": 41.895,
       "lng": 12.4975
@@ -1232,12 +1295,13 @@
       "cyberpunk",
       "top-bar"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Drink+Kong+Rome](https://www.google.com/maps/search/?api=1&query=Drink+Kong+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Drink+Kong+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "loratorio-trastevere",
     "title": "L'Oratorio Trastevere",
-    "category": "לאונג' קיץ",
     "coordinates": {
       "lat": 41.8875,
       "lng": 12.472
@@ -1251,12 +1315,13 @@
       "pop-up",
       "relaxed"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Oratorio+Trastevere+Rome](https://www.google.com/maps/search/?api=1&query=L%27Oratorio+Trastevere+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Oratorio+Trastevere+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "blackmarket-hall",
     "title": "Blackmarket Hall",
-    "category": "בר ומוזיקה",
     "coordinates": {
       "lat": 41.896,
       "lng": 12.493
@@ -1270,12 +1335,13 @@
       "live-music",
       "bohemian"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Blackmarket+Hall+Rome](https://www.google.com/maps/search/?api=1&query=Blackmarket+Hall+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Blackmarket+Hall+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "divinity-rooftop",
     "title": "Divinity Rooftop",
-    "category": "בר רופטופ",
     "coordinates": {
       "lat": 41.8983,
       "lng": 12.477
@@ -1289,12 +1355,13 @@
       "romantic",
       "sunset"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Divinity+Rooftop+Rome](https://www.google.com/maps/search/?api=1&query=Divinity+Rooftop+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Divinity+Rooftop+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "hotel-fontana-rooftop",
     "title": "Hotel Fontana Rooftop*",
-    "category": "בר רופטופ",
     "coordinates": {
       "lat": 41.9008,
       "lng": 12.4831
@@ -1308,12 +1375,13 @@
       "view",
       "expensive"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Hotel+Fontana+Rooftop+Rome](https://www.google.com/maps/search/?api=1&query=Hotel+Fontana+Rooftop+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel+Fontana+Rooftop+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "flor-de-maga",
     "title": "Flor de Maga (Adona)",
-    "category": "בר בוטני",
     "coordinates": {
       "lat": 41.8965,
       "lng": 12.471
@@ -1327,12 +1395,13 @@
       "outdoor",
       "summer"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Flor+de+Maga+Rome](https://www.google.com/maps/search/?api=1&query=Flor+de+Maga+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Flor+de+Maga+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "chiosco-vittorio",
     "title": "Chiosco Vittorio",
-    "category": "בר יין/טבעי",
     "coordinates": {
       "lat": 41.895,
       "lng": 12.505
@@ -1346,12 +1415,13 @@
       "natural-wine",
       "eclectic"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Chiosco+Vittorio+Rome](https://www.google.com/maps/search/?api=1&query=Chiosco+Vittorio+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Chiosco+Vittorio+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "langolo-trieste",
     "title": "L'Angolo Trieste",
-    "category": "פאב מקומי",
     "coordinates": {
       "lat": 41.918,
       "lng": 12.508
@@ -1365,12 +1435,13 @@
       "casual",
       "local"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=L%27Angolo+Trieste+Rome](https://www.google.com/maps/search/?api=1&query=L%27Angolo+Trieste+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Angolo+Trieste+Rome",
+    "categoryId": "4",
+    "category": 4
   },
   {
     "id": "daruma",
     "title": "Daruma",
-    "category": "סושי בר",
     "coordinates": {
       "lat": 41.896,
       "lng": 12.4825
@@ -1384,6 +1455,8 @@
       "quick",
       "chain"
     ],
-    "gmapsUrl": "[https://www.google.com/maps/search/?api=1&query=Daruma+Rome](https://www.google.com/maps/search/?api=1&query=Daruma+Rome)"
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Daruma+Rome",
+    "categoryId": "2",
+    "category": 2
   }
 ]

@@ -1,14 +1,17 @@
 /**
- * Leaflet Map Controller Module
+ * Leaflet Map Controller Module - Phase 2 Bug Fixes (Robust Category ID Type Support)
  */
 import { CONFIG } from './config.js';
 
 let map = null;
 let markersGroup = null;
+let hotelMarker = null;
 let userMarker = null;
+let pristinePlacesData = []; // Pristine unmodified copy of all places
+const markerMap = new Map(); // Maps place.id -> { marker, coords, place }
 
 /**
- * Initializes the Leaflet map instance.
+ * Initializes the Leaflet map instance centered on Trevi Fountain at zoom 16.
  * @param {string} containerId - DOM ID of map container
  */
 export function initMap(containerId = 'map') {
@@ -19,60 +22,112 @@ export function initMap(containerId = 'map') {
     zoom: initialZoom,
     minZoom: minZoom,
     maxZoom: maxZoom,
-    zoomControl: false // Custom placement in UI if needed
+    zoomControl: false
   });
 
-  // Add standard tile layer (OSM)
+  // Add OSM tile layer
   L.tileLayer(tileLayerUrl, {
     attribution: tileAttribution,
     maxZoom: maxZoom
   }).addTo(map);
 
-  // Position zoom control top-right to avoid mobile header collision
+  // Position zoom control top-right
   L.control.zoom({ position: 'topright' }).addTo(map);
 
-  // Layer group for dynamic markers
+  // Layer group for dynamic itinerary markers
   markersGroup = L.layerGroup().addTo(map);
+
+  // Render Gold Glowing Hotel Marker
+  renderHotelMarker();
 
   return map;
 }
 
 /**
- * Renders location markers dynamically based on active category filters.
- * @param {Array} places - Parsed list of places from places.json
- * @param {Set|Array} activeCategories - Set or array of allowed category names
+ * Renders the hardcoded Hotel Star Marker at Trevi Fountain.
  */
-export function renderMarkers(places = [], activeCategories = null) {
-  if (!map || !markersGroup) return;
+function renderHotelMarker() {
+  if (!map) return;
 
-  markersGroup.clearLayers();
+  const { coords, title, color, icon } = CONFIG.HotelSettings;
 
-  const bounds = [];
-
-  // Filter places dynamically based on active categories
-  const filteredPlaces = places.filter(place => {
-    if (!place.coordinates || (place.coordinates.lat === 0 && place.coordinates.lng === 0)) {
-      return false; // Skip invalid 0,0 coordinates
-    }
-    if (!activeCategories) return true;
-    return activeCategories.has ? activeCategories.has(place.category) : activeCategories.includes(place.category);
+  const hotelIcon = L.divIcon({
+    className: 'hotel-marker-pin',
+    html: `
+      <div class="hotel-pulse"></div>
+      <div class="hotel-bubble" style="background-color: ${color}">
+        <i class="${icon}"></i>
+      </div>
+    `,
+    iconSize: [42, 42],
+    iconAnchor: [21, 21],
+    popupAnchor: [0, -22]
   });
 
-  filteredPlaces.forEach(place => {
+  hotelMarker = L.marker(coords, { icon: hotelIcon, zIndexOffset: 2000 }).addTo(map);
+
+  const hotelPopup = `
+    <div class="hotel-popup">
+      <div class="hotel-header">
+        <i class="${icon}" style="color: ${color}"></i>
+        <strong>${title}</strong>
+      </div>
+      <p>מיקום מרכזי ליד מזרקת טרווי (Trevi Fountain)</p>
+    </div>
+  `;
+
+  hotelMarker.bindPopup(hotelPopup, { className: 'waze-leaflet-popup' });
+}
+
+/**
+ * Renders location markers dynamically based on numeric categoryId filters ("1"-"6").
+ * Rebuilds markers from pristine original places array with robust String/Number matching.
+ * @param {Array} places - Parsed list of places from places.json (stored on initial call)
+ * @param {Set|Array} activeCategoryIds - Set or array of allowed numeric category IDs ("1"-"6")
+ */
+export function renderMarkers(places = null, activeCategoryIds = null) {
+  if (!map || !markersGroup) return;
+
+  // Store pristine copy of places on initial load
+  if (places && Array.isArray(places) && places.length > 0) {
+    pristinePlacesData = places;
+  }
+
+  const placesToRender = pristinePlacesData;
+  if (!placesToRender || placesToRender.length === 0) return;
+
+  // Completely clear layer & marker dictionary
+  markersGroup.clearLayers();
+  markerMap.clear();
+
+  placesToRender.forEach(place => {
+    if (!place.coordinates || (place.coordinates.lat === 0 && place.coordinates.lng === 0)) {
+      return; // Skip invalid 0,0 coordinates
+    }
+
+    const catIdStr = String(place.categoryId || "1");
+    const catIdNum = Number(place.categoryId) || 1;
+
+    // Filter check: render only if catIdStr or catIdNum is active
+    if (activeCategoryIds) {
+      const isCategoryActive = activeCategoryIds.has
+        ? (activeCategoryIds.has(catIdStr) || activeCategoryIds.has(catIdNum))
+        : (activeCategoryIds.includes(catIdStr) || activeCategoryIds.includes(catIdNum));
+      if (!isCategoryActive) return;
+    }
+
     const lat = place.coordinates.lat;
     const lng = place.coordinates.lng;
-    bounds.push([lat, lng]);
+    const categoryObj = CONFIG.Categories[catIdStr] || CONFIG.Categories["1"];
 
-    const style = CONFIG.CategoryStyles[place.category] || CONFIG.CategoryStyles['default'];
-
-    // Custom DivIcon marker (Waze-style pin)
+    // Custom DivIcon marker (Waze-style premium pin)
     const customIcon = L.divIcon({
       className: 'custom-map-pin',
       html: `
-        <div class="pin-bubble" style="background-color: ${style.hexColor}">
-          <i class="${style.iconClass}"></i>
+        <div class="pin-bubble" style="background-color: ${categoryObj.color}">
+          <i class="${categoryObj.icon}"></i>
         </div>
-        <div class="pin-arrow" style="border-top-color: ${style.hexColor}"></div>
+        <div class="pin-arrow" style="border-top-color: ${categoryObj.color}"></div>
       `,
       iconSize: [38, 48],
       iconAnchor: [19, 48],
@@ -81,7 +136,14 @@ export function renderMarkers(places = [], activeCategories = null) {
 
     const marker = L.marker([lat, lng], { icon: customIcon });
 
-    // Generate Popup Content HTML
+    // Clean Google Maps URL using Regex
+    let cleanGmapsUrl = place.gmapsUrl || `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+    const urlMatch = cleanGmapsUrl.match(/https?:\/\/[^\s\)\"]+/);
+    if (urlMatch) {
+      cleanGmapsUrl = urlMatch[0];
+    }
+
+    // Generate Rich Popup Content HTML
     const popupContent = `
       <div class="place-popup">
         <div class="popup-header">
@@ -90,8 +152,8 @@ export function renderMarkers(places = [], activeCategories = null) {
         </div>
         
         <div class="popup-badges">
-          <span class="popup-badge category-badge" style="background-color: ${style.hexColor}15; color: ${style.hexColor}; border: 1px solid ${style.hexColor}40;">
-            <i class="${style.iconClass}"></i> ${place.category}
+          <span class="popup-badge category-badge" style="background-color: ${categoryObj.color}15; color: ${categoryObj.color}; border: 1px solid ${categoryObj.color}40;">
+            <i class="${categoryObj.icon}"></i> ${categoryObj.name}
           </span>
           ${place.atmosphere ? `<span class="popup-badge atmosphere-badge"><i class="fa-solid fa-face-smile"></i> ${place.atmosphere}</span>` : ''}
         </div>
@@ -116,10 +178,10 @@ export function renderMarkers(places = [], activeCategories = null) {
           </div>
         ` : ''}
 
-        <a href="${place.gmapsUrl || `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`}" 
+        <a href="${cleanGmapsUrl}" 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="popup-nav-btn">
+           class="gmaps-nav-btn">
           <i class="fa-solid fa-diamond-turn-right"></i> ניווט ב-Google Maps
         </a>
       </div>
@@ -131,14 +193,41 @@ export function renderMarkers(places = [], activeCategories = null) {
     });
 
     markersGroup.addLayer(marker);
-  });
 
-  // Dynamic Auto-Fit Bounds
-  if (bounds.length > 0) {
-    map.fitBounds(bounds, {
-      padding: [40, 40],
-      maxZoom: 16
+    // Save to map dictionary for search navigation
+    markerMap.set(place.id, {
+      marker: marker,
+      coords: [lat, lng],
+      place: place
     });
+  });
+}
+
+/**
+ * Flies to a location smoothly at target zoom 18 using dynamic pixel projection
+ * shifting the view Y-axis by -160 pixels to leave room for the popup.
+ * @param {string} placeId - ID of place to focus
+ */
+export function flyToAndOpenMarker(placeId) {
+  const item = markerMap.get(placeId);
+  if (item && map) {
+    const targetZoom = 18;
+    const originalLatLng = L.latLng(item.coords[0], item.coords[1]);
+
+    // Convert LatLng to container pixels at the target zoom level
+    const targetPoint = map.project(originalLatLng, targetZoom);
+
+    // Subtract 160 pixels from the Y-axis to shift the map view UP
+    targetPoint.y -= 160;
+
+    // Convert the adjusted pixel coordinates back to LatLng
+    const offsetLatLng = map.unproject(targetPoint, targetZoom);
+
+    map.flyTo(offsetLatLng, targetZoom, { animate: true, duration: 1.2 });
+
+    setTimeout(() => {
+      item.marker.openPopup();
+    }, 800);
   }
 }
 
@@ -159,7 +248,6 @@ export function locateUser(onError) {
       const { latitude, longitude } = position.coords;
 
       if (!userMarker) {
-        // Create pulsing blue location dot
         const userIcon = L.divIcon({
           className: 'user-location-pin',
           html: `
@@ -169,7 +257,7 @@ export function locateUser(onError) {
           iconSize: [24, 24],
           iconAnchor: [12, 12]
         });
-        userMarker = L.marker([latitude, longitude], { icon: userIcon, zIndexOffset: 1000 }).addTo(map);
+        userMarker = L.marker([latitude, longitude], { icon: userIcon, zIndexOffset: 1500 }).addTo(map);
       } else {
         userMarker.setLatLng([latitude, longitude]);
       }

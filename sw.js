@@ -1,9 +1,12 @@
 /**
- * Service Worker for Offline PWA Support
- * Rome Travel Map MVP
+ * Service Worker for Offline PWA Support - Phase 2
+ * 
+ * NOTE: Network-First strategy for places.json is enabled during development 
+ * so data updates are reflected immediately without stale cache locks. 
+ * For production, switch places.json back to Cache-First strategy.
  */
 
-const CACHE_NAME = 'rome-map-v1';
+const CACHE_NAME = 'rome-map-v2';
 
 const PRECACHE_ASSETS = [
   './',
@@ -15,7 +18,6 @@ const PRECACHE_ASSETS = [
   './js/map.js',
   './js/ui.js',
   './js/app.js',
-  './data/places.json',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
@@ -50,25 +52,38 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch Event - Cache First, fallback to Network
+// Fetch Event - Hybrid Caching Strategy
 self.addEventListener('fetch', (event) => {
-  // Only intercept GET requests
   if (event.request.method !== 'GET') return;
 
+  const url = new URL(event.request.url);
+
+  // Network-First strategy specifically for places.json (Development Mode)
+  if (url.pathname.endsWith('places.json')) {
+    event.respondWith(
+      fetch(event.request)
+        .then(networkResponse => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseClone = networkResponse.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
+          }
+          return networkResponse;
+        })
+        .catch(() => {
+          console.log('[SW] Network failed for places.json, serving from cache fallback.');
+          return caches.match(event.request);
+        })
+    );
+    return;
+  }
+
+  // Cache-First strategy for all other static assets
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
       if (cachedResponse) {
-        // Return cached asset, fetch updated in background
-        fetch(event.request).then(networkResponse => {
-          if (networkResponse && networkResponse.status === 200) {
-            caches.open(CACHE_NAME).then(cache => cache.put(event.request, networkResponse));
-          }
-        }).catch(() => {/* offline fallback */});
-
         return cachedResponse;
       }
 
-      // Network fallback
       return fetch(event.request).then(networkResponse => {
         if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
           return networkResponse;
