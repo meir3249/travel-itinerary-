@@ -294,76 +294,6 @@
     "bookingDate": null
   },
   {
-    "id": 21,
-    "title": "Mimi e Coco*",
-    "coordinates": {
-      "lat": 41.8981,
-      "lng": 12.4705
-    },
-    "rating": 4.5,
-    "notes": "אווירה שמחה ותוססת מאוד, אוכל ברמה טובה במרכז תיירותי",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Mimi+e+Coco+Rome",
-    "categoryId": 2,
-    "reservationId": 2,
-    "bookingDate": null
-  },
-  {
-    "id": 22,
-    "title": "Da Enzo al 29",
-    "coordinates": {
-      "lat": 41.8885,
-      "lng": 12.4776
-    },
-    "rating": 4.6,
-    "notes": "קרבונרה מושלמת בטרסטוורה. חובה להגיע חצי שעה לפני הפתיחה",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Da+Enzo+al+29+Rome",
-    "categoryId": 2,
-    "reservationId": 3,
-    "bookingDate": null
-  },
-  {
-    "id": 23,
-    "title": "Fiaschetteria Beltramme",
-    "coordinates": {
-      "lat": 41.9052,
-      "lng": 12.4808
-    },
-    "rating": 4.5,
-    "notes": "פנינה ליד המדרגות הספרדיות. פסטות טריות ושירות אדיב",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Fiaschetteria+Beltramme+Rome",
-    "categoryId": 2,
-    "reservationId": 2,
-    "bookingDate": null
-  },
-  {
-    "id": 24,
-    "title": "La Tavernetta 48",
-    "coordinates": {
-      "lat": 41.8975,
-      "lng": 12.476
-    },
-    "rating": 4.7,
-    "notes": "מסתתרת בסמטאות הפנתאון. מנות איכותיות מאוד",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Tavernetta+48+Rome",
-    "categoryId": 2,
-    "reservationId": 2,
-    "bookingDate": null
-  },
-  {
-    "id": 25,
-    "title": "Santi 40",
-    "coordinates": {
-      "lat": 41.8895,
-      "lng": 12.471
-    },
-    "rating": 4.6,
-    "notes": "בטרסטוורה, עיצוב של ביסטרו פריזאי וחוויה קולינרית מעולה",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Santi+40+Rome",
-    "categoryId": 2,
-    "reservationId": 2,
-    "bookingDate": null
-  },
-  {
     "id": 26,
     "title": "DeRoma (Farine Romane)",
     "coordinates": {
@@ -392,20 +322,6 @@
     "bookingDate": null
   },
   {
-    "id": 28,
-    "title": "Felice a Testaccio",
-    "coordinates": {
-      "lat": 41.8785,
-      "lng": 12.4782
-    },
-    "rating": 4.6,
-    "notes": "לא טייקאווי! מסעדה אייקונית המכינה קאצ'ו אה פפה ליד השולחן",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Felice+a+Testaccio+Rome",
-    "categoryId": 2,
-    "reservationId": 1,
-    "bookingDate": null
-  },
-  {
     "id": 29,
     "title": "Da Pancrazio dal 1922",
     "coordinates": {
@@ -420,20 +336,6 @@
     "bookingDate": null
   },
   {
-    "id": 30,
-    "title": "Caligola",
-    "coordinates": {
-      "lat": 41.886,
-      "lng": 12.47
-    },
-    "rating": 4.4,
-    "notes": "אווירה טובה ותפריט יצירתי",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Caligola+Rome",
-    "categoryId": 2,
-    "reservationId": 2,
-    "bookingDate": null
-  },
-  {
     "id": 31,
     "title": "Baccano",
     "coordinates": {
@@ -443,20 +345,6 @@
     "rating": 4.4,
     "notes": "בקרבת מזרקת טרווי, השפעות איטלקיות ואווירה תוססת",
     "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Baccano+Rome",
-    "categoryId": 2,
-    "reservationId": 2,
-    "bookingDate": null
-  },
-  {
-    "id": 32,
-    "title": "La Piccola Cuccagna",
-    "coordinates": {
-      "lat": 41.898,
-      "lng": 12.4733
-    },
-    "rating": 4.2,
-    "notes": "מסעדה קלאסית ורגועה סמוך לפיאצה נאבונה",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Piccola+Cuccagna+Rome",
     "categoryId": 2,
     "reservationId": 2,
     "bookingDate": null
@@ -485,20 +373,6 @@
     "rating": 4.7,
     "notes": "מתחרה ישיר לרושיולי, פיצות טריות לאורך כל היום",
     "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Forno+Campo+de%27+Fiori+Rome",
-    "categoryId": 2,
-    "reservationId": 3,
-    "bookingDate": null
-  },
-  {
-    "id": 35,
-    "title": "All'Antico Vinaio",
-    "coordinates": {
-      "lat": 41.8998,
-      "lng": 12.4765
-    },
-    "rating": 4.5,
-    "notes": "כריכי ענק מטורפים (סקיאצ'אטה), אך צפו לתור של כ-45 דקות",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=All%27Antico+Vinaio+Rome",
     "categoryId": 2,
     "reservationId": 3,
     "bookingDate": null
@@ -574,34 +448,6 @@
     "bookingDate": null
   },
   {
-    "id": 41,
-    "title": "Il Primo Bacio (Baccio)",
-    "coordinates": {
-      "lat": 41.902,
-      "lng": 12.4838
-    },
-    "rating": 4.3,
-    "notes": "פיצה בעלת שוליים עבים (סגנון נאפוליטני) וטובה",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Il+Primo+Bacio+Rome",
-    "categoryId": 2,
-    "reservationId": 3,
-    "bookingDate": null
-  },
-  {
-    "id": 42,
-    "title": "Pizza Trilussa",
-    "coordinates": {
-      "lat": 41.8898,
-      "lng": 12.4708
-    },
-    "rating": 4.3,
-    "notes": "בטרסטוורה. פיצה במגשים שנחתכת לפי משקל. פתרון צהריים זול",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Pizza+Trilussa+Rome",
-    "categoryId": 2,
-    "reservationId": 3,
-    "bookingDate": null
-  },
-  {
     "id": 43,
     "title": "Pastaciutta",
     "coordinates": {
@@ -625,20 +471,6 @@
     "rating": 4.5,
     "notes": "מתמחה בכדורי סופלי רומאיים מטוגנים בשלל מילויים כנשנוש",
     "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Amerina+Rome",
-    "categoryId": 2,
-    "reservationId": 3,
-    "bookingDate": null
-  },
-  {
-    "id": 45,
-    "title": "Giselda (Gizelda)",
-    "coordinates": {
-      "lat": 41.888,
-      "lng": 12.474
-    },
-    "rating": 4.5,
-    "notes": "בטרסטוורה. שילוב של בית קפה, מאפייה ומנות חמות",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Giselda+Rome",
     "categoryId": 2,
     "reservationId": 3,
     "bookingDate": null
@@ -807,7 +639,7 @@
     "rating": 4.4,
     "notes": "מנות צבעוניות, שייקים וקערות אסאי לבוקר בריא ומרענן",
     "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginger+Sapori+e+Salute+Rome",
-    "categoryId": 2,
+    "categoryId": 3,
     "reservationId": 2,
     "bookingDate": null
   },
@@ -980,20 +812,6 @@
     "bookingDate": null
   },
   {
-    "id": 70,
-    "title": "Daruma",
-    "coordinates": {
-      "lat": 41.896,
-      "lng": 12.4825
-    },
-    "rating": 4.3,
-    "notes": "פתרון פשוט ואמין למי שרוצה הפוגה קלה מהפסטות",
-    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Daruma+Rome",
-    "categoryId": 2,
-    "reservationId": 3,
-    "bookingDate": null
-  },
-  {
     "id": 71,
     "title": "Zuma",
     "coordinates": {
@@ -1020,5 +838,19 @@
     "categoryId": 5,
     "reservationId": 1,
     "bookingDate": "2026-09-28T17:00:00"
+  },
+  {
+    "id": 73,
+    "title": "II Vicolo nel corso",
+    "coordinates": {
+      "lat": 41.899,
+      "lng": 12.481
+    },
+    "rating": 4.4,
+    "notes": "מסעדה טובה עם צ'יזוויל",
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=vicolo+nel+corso",
+    "categoryId": 2,
+    "reservationId": 2,
+    "bookingDate": null
   }
 ]
