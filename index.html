@@ -48,6 +48,17 @@
     <div id="search-results" class="search-results-dropdown"></div>
   </div>
 
+  <!-- Booked Places Quick-Filter Tabs -->
+  <div id="booked-filter" class="booked-filter" role="group" aria-label="סינון מקומות שהוזמנו">
+    <button type="button" class="booked-tab active" data-filter="all" aria-pressed="true">
+      <i class="fa-solid fa-layer-group"></i> הכל
+    </button>
+    <button type="button" class="booked-tab" data-filter="booked" aria-pressed="false">
+      <i class="fa-solid fa-calendar-check"></i> הוזמנו
+      <span id="booked-count" class="booked-count">0</span>
+    </button>
+  </div>
+
   <!-- Floating UI Buttons -->
   <button id="filter-btn" class="fab-btn filter-fab" aria-label="סינון קטגוריות" title="סינון קטגוריות">
     <i class="fa-solid fa-sliders"></i>

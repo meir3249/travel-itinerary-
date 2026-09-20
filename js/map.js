@@ -1,7 +1,9 @@
 /**
- * Leaflet Map Controller Module - Phase 2 Bug Fixes (Robust Category ID Type Support)
+ * Leaflet Map Controller Module - Phase 3 (Normalized Schema + Booked Filter + Scale)
  */
 import { CONFIG } from './config.js';
+import { formatBookingDateHebrew } from './date.js';
+import { createScaleControl } from './scale.js';
 
 let map = null;
 let markersGroup = null;
@@ -36,6 +38,9 @@ export function initMap(containerId = 'map') {
 
   // Layer group for dynamic itinerary markers
   markersGroup = L.layerGroup().addTo(map);
+
+  // Dynamic scale bar with walking-time estimate (bottom-right)
+  createScaleControl(map);
 
   // Render Gold Glowing Hotel Marker
   renderHotelMarker();
@@ -80,12 +85,12 @@ function renderHotelMarker() {
 }
 
 /**
- * Renders location markers dynamically based on numeric categoryId filters ("1"-"6").
- * Rebuilds markers from pristine original places array with robust String/Number matching.
- * @param {Array} places - Parsed list of places from places.json (stored on initial call)
- * @param {Set|Array} activeCategoryIds - Set or array of allowed numeric category IDs ("1"-"6")
+ * Renders location markers dynamically based on the current filter state.
+ * Rebuilds markers from the pristine original places array.
+ * @param {Array<import('./config.js').Place>|null} places - Places list (stored on first call).
+ * @param {import('./config.js').FilterState|null} filterState - Active category ids + bookedOnly flag.
  */
-export function renderMarkers(places = null, activeCategoryIds = null) {
+export function renderMarkers(places = null, filterState = null) {
   if (!map || !markersGroup) return;
 
   // Store pristine copy of places on initial load
@@ -96,6 +101,12 @@ export function renderMarkers(places = null, activeCategoryIds = null) {
   const placesToRender = pristinePlacesData;
   if (!placesToRender || placesToRender.length === 0) return;
 
+  // Normalize filter inputs
+  const activeCategoryIds = filterState && filterState.activeCategoryIds
+    ? filterState.activeCategoryIds
+    : null;
+  const bookedOnly = !!(filterState && filterState.bookedOnly);
+
   // Completely clear layer & marker dictionary
   markersGroup.clearLayers();
   markerMap.clear();
@@ -105,29 +116,32 @@ export function renderMarkers(places = null, activeCategoryIds = null) {
       return; // Skip invalid 0,0 coordinates
     }
 
-    const catIdStr = String(place.categoryId || "1");
     const catIdNum = Number(place.categoryId) || 1;
+    const isBooked = place.bookingDate != null;
 
-    // Filter check: render only if catIdStr or catIdNum is active
+    // Category filter (numeric Set; tolerate string entries defensively)
     if (activeCategoryIds) {
-      const isCategoryActive = activeCategoryIds.has
-        ? (activeCategoryIds.has(catIdStr) || activeCategoryIds.has(catIdNum))
-        : (activeCategoryIds.includes(catIdStr) || activeCategoryIds.includes(catIdNum));
+      const isCategoryActive = activeCategoryIds.has(catIdNum)
+        || activeCategoryIds.has(String(catIdNum));
       if (!isCategoryActive) return;
     }
 
+    // Booked-only filter
+    if (bookedOnly && !isBooked) return;
+
     const lat = place.coordinates.lat;
     const lng = place.coordinates.lng;
-    const categoryObj = CONFIG.Categories[catIdStr] || CONFIG.Categories["1"];
+    const categoryObj = CONFIG.Categories[String(catIdNum)] || CONFIG.Categories["1"];
 
-    // Custom DivIcon marker (Waze-style premium pin)
+    // Custom DivIcon marker (Waze-style premium pin); booked places get a highlight ring
     const customIcon = L.divIcon({
-      className: 'custom-map-pin',
+      className: `custom-map-pin${isBooked ? ' is-booked' : ''}`,
       html: `
         <div class="pin-bubble" style="background-color: ${categoryObj.color}">
           <i class="${categoryObj.icon}"></i>
         </div>
         <div class="pin-arrow" style="border-top-color: ${categoryObj.color}"></div>
+        ${isBooked ? '<div class="pin-booked-badge"><i class="fa-solid fa-calendar-check"></i></div>' : ''}
       `,
       iconSize: [38, 48],
       iconAnchor: [19, 48],
@@ -143,25 +157,29 @@ export function renderMarkers(places = null, activeCategoryIds = null) {
       cleanGmapsUrl = urlMatch[0];
     }
 
+    // Reservation status label + Hebrew booking date
+    const reservationLabel = CONFIG.RESERVATION_UI_MAP[place.reservationId] || '';
+    const bookingDateText = formatBookingDateHebrew(place.bookingDate);
+
     // Generate Rich Popup Content HTML
     const popupContent = `
-      <div class="place-popup">
+      <div class="place-popup${isBooked ? ' is-booked' : ''}">
         <div class="popup-header">
           <h3 class="popup-title">${place.title}</h3>
           <span class="popup-rating"><i class="fa-solid fa-star"></i> ${place.rating || 'N/A'}</span>
         </div>
-        
+
         <div class="popup-badges">
           <span class="popup-badge category-badge" style="background-color: ${categoryObj.color}15; color: ${categoryObj.color}; border: 1px solid ${categoryObj.color}40;">
             <i class="${categoryObj.icon}"></i> ${categoryObj.name}
           </span>
-          ${place.atmosphere ? `<span class="popup-badge atmosphere-badge"><i class="fa-solid fa-face-smile"></i> ${place.atmosphere}</span>` : ''}
+          ${reservationLabel ? `<span class="popup-badge reservation-badge"><i class="fa-regular fa-calendar-check"></i> ${reservationLabel}</span>` : ''}
         </div>
 
-        ${place.reservation ? `
-          <div class="popup-field reservation-field">
-            <i class="fa-regular fa-calendar-check"></i>
-            <span><strong>הזמנה:</strong> ${place.reservation}</span>
+        ${bookingDateText ? `
+          <div class="popup-field booked-field">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span><strong>מועד שהוזמן:</strong> ${bookingDateText}</span>
           </div>
         ` : ''}
 
@@ -172,15 +190,9 @@ export function renderMarkers(places = null, activeCategoryIds = null) {
           </div>
         ` : ''}
 
-        ${place.tags && place.tags.length ? `
-          <div class="popup-tags">
-            ${place.tags.map(t => `<span class="tag-item">#${t}</span>`).join('')}
-          </div>
-        ` : ''}
-
-        <a href="${cleanGmapsUrl}" 
-           target="_blank" 
-           rel="noopener noreferrer" 
+        <a href="${cleanGmapsUrl}"
+           target="_blank"
+           rel="noopener noreferrer"
            class="gmaps-nav-btn">
           <i class="fa-solid fa-diamond-turn-right"></i> ניווט ב-Google Maps
         </a>
@@ -209,7 +221,7 @@ export function renderMarkers(places = null, activeCategoryIds = null) {
  * @param {string} placeId - ID of place to focus
  */
 export function flyToAndOpenMarker(placeId) {
-  const item = markerMap.get(placeId);
+  const item = markerMap.get(Number(placeId));
   if (item && map) {
     const targetZoom = 18;
     const originalLatLng = L.latLng(item.coords[0], item.coords[1]);

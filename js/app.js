@@ -1,49 +1,49 @@
 /**
- * Main Application Orchestrator Module - Phase 2
+ * Main Application Orchestrator Module - Phase 3
  */
 import { fetchPlaces } from './api.js';
 import { initMap, renderMarkers, locateUser, flyToAndOpenMarker } from './map.js';
-import { initUI, showToast, hideLoader } from './ui.js';
+import { initUI, showToast, hideLoader, getFilterState } from './ui.js';
+import { loadFilterState } from './storage.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    // 1. Initialize Leaflet Map
+    // 1. Initialize Leaflet Map (includes dynamic scale control)
     initMap('map');
 
-    // 2. Fetch Places Data
-    const places = await fetchPlaces();
+    // 2. Fetch Places Data (network-first, offline cache fallback) and persisted filters
+    const [places, persistedState] = await Promise.all([
+      fetchPlaces(),
+      loadFilterState()
+    ]);
 
     // 3. Initialize UI & Event Handlers
     initUI(
       places,
-      (activeCategoryIds) => {
-        // Real-time filter callback
-        renderMarkers(places, activeCategoryIds);
+      (filterState) => {
+        // Real-time filter callback (categories + bookedOnly)
+        renderMarkers(places, filterState);
       },
       () => {
-        // Locate FAB button click callback
-        locateUser((errorMsg) => {
-          showToast(errorMsg, 4500);
-        });
+        locateUser((errorMsg) => showToast(errorMsg, 4500));
       },
       (placeId) => {
-        // Search result item click callback
         flyToAndOpenMarker(placeId);
-      }
+      },
+      persistedState
     );
 
-    // 4. Initial Marker Render
-    renderMarkers(places);
+    // 4. Initial Marker Render using the (possibly hydrated) filter state
+    renderMarkers(places, getFilterState());
 
   } catch (error) {
     console.error('App initialization error:', error);
     showToast('שגיאה בטעינת נתוני המפות. נא לוודא חיבור לרשת ולרענן.', 6000);
   } finally {
-    // 5. Hide Loader Overlay
     hideLoader();
   }
 
-  // 6. Register Service Worker for Offline PWA
+  // 5. Register Service Worker for Offline PWA
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js')

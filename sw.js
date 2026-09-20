@@ -6,7 +6,7 @@
  * For production, switch places.json back to Cache-First strategy.
  */
 
-const CACHE_NAME = 'rome-map-v2';
+const CACHE_NAME = 'rome-map-v3';
 
 const PRECACHE_ASSETS = [
   './',
@@ -18,6 +18,9 @@ const PRECACHE_ASSETS = [
   './js/map.js',
   './js/ui.js',
   './js/app.js',
+  './js/date.js',
+  './js/storage.js',
+  './js/scale.js',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
